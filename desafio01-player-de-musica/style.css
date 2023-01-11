@@ -1,6 +1,8 @@
 * {
   margin: 0;
   background-color: #0f0d13;
+  color: #e1e1e6;
+  font-family: 'Roboto', sans-serif;
 }
 .player-bg {
   background-color: #2a2141;
@@ -39,4 +41,98 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+img.large {
+  width: 190px;
+  height: 190px;
+  border-radius: 6%;
+  margin: 60px 37px 0px;
+}
+img.small {
+  width: 84px;
+  height: 84px;
+  border-radius: 6%;
+  margin: 25px;
+  float: left;
+}
+
+h3 {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: transparent;
+}
+h4 {
+  margin-top: 5px;
+  font-weight: 100;
+  font-size: 19px;
+  background-color: transparent;
+}
+svg {
+  background-color: transparent;
+}
+.largecontrols {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 250px;
+  align-items: center;
+  margin-left: 7px;
+}
+.controls {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 250px;
+  align-items: center;
+  margin-left: 50px;
+}
+.item {
+  flex: 1;
+}
+.progressbar {
+  background-color: transparent;
+}
+.bar {
+  margin-left: 25px;
+}
+svg.bar {
+  margin-top: 40px;
+  position: absolute;
+}
+.largebar {
+  margin-left: 25px;
+}
+svg.largebar {
+  margin-top: 40px;
+  position: absolute;
+}
+.timesmall {
+  background-color: transparent;
+  display: flex;
+  width: 300px;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+.timelarge {
+  background-color: transparent;
+  display: flex;
+  width: 203px;
+  margin-left: 25px;
+  margin-top: 60px;
+}
+p {
+  background-color: transparent;
+}
+p.totaltimesmall {
+  padding-right: 220px;
+}
+p.totaltimelarge {
+  padding-right: 125px;
+}
+.largetext {
+  background-color: transparent;
+  margin-left: 37px;
 }
