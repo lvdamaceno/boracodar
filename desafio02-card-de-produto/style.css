@@ -12,14 +12,24 @@
 
 .info {
   height: 100vh;
-  width: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .item {
-  width: 400px;
+  /* width: 400px; */
   width: fit-content;
+}
+
+.display {
+  width: 449px;
+  height: 222px;
+}
+
+.display .itemphoto {
+  width: 449px;
+  height: 222px;
 }
 
 .item h1 {
@@ -58,10 +68,6 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
-}
-
-.itemphoto {
-  margin-left: 50%;
 }
 
 .itemdata {
