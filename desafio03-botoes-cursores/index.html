@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Botões e Cursores</title>
+  </head>
+  <body>
+    <div class="projeto">
+      <div class="tipos">
+        <div class="titulo">
+          <h1>Tipos de botão</h1>
+          <p>
+            Dentro de um layout, botões servem para destacar ações importantes a
+            serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+          </p>
+        </div>
+        <div class="table">
+          <table cellspacing="0" cellpadding="0">
+            <thead>
+              <tr class="hor-header">
+                <th class="invisible"></th>
+                <th>BOTAO PRIMARIO</th>
+                <th>BOTAO SECUNDARIO</th>
+                <th>BOTAO TERCIARIO</th>
+                <th class="cursor">CURSOR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- DEFAULT BUTTONS -->
+              <tr>
+                <td class="leftHeader">DEFAULT</td>
+                <td>
+                  <button id="btn-default-primary">DEFAULT PRIMARY</button>
+                </td>
+                <td>
+                  <button id="btn-default-secondary">DEFAULT SECONDARY</button>
+                </td>
+                <td>
+                  <button id="btn-default-tertiary">DEFAULT TERTIARY</button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/normal_pointer.svg" alt="" />
+                </td>
+              </tr>
+              <!-- HOVER BUTTONS -->
+              <tr>
+                <td class="leftHeader">HOVER</td>
+                <td>
+                  <button id="btn-hover-primary">HOVER PRIMARY</button>
+                </td>
+                <td>
+                  <button id="btn-hover-secondary">HOVER SECONDARY</button>
+                </td>
+                <td>
+                  <button id="btn-hover-tertiary">HOVER TERTIARY</button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/normal_pointer.svg" alt="" />
+                </td>
+              </tr>
+              <!-- FOCUS BUTTONS -->
+              <tr>
+                <td class="leftHeader">FOCUS</td>
+                <td>
+                  <button id="btn-focus-primary">FOCUS PRIMARY</button>
+                </td>
+                <td>
+                  <button id="btn-focus-secondary">FOCUS SECONDARY</button>
+                </td>
+                <td>
+                  <button id="btn-focus-tertiary">FOCUS TERTIARY</button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/normal_pointer.svg" alt="" />
+                </td>
+              </tr>
+              <!-- DISABLED BUTTONS -->
+              <tr>
+                <td class="leftHeader">DISABLED</td>
+                <td>
+                  <button id="btn-disabled-primary">DISABLED PRIMARY</button>
+                </td>
+                <td>
+                  <button id="btn-disabled-secondary">
+                    DISABLED SECONDARY
+                  </button>
+                </td>
+                <td>
+                  <button id="btn-disabled-tertiary">DISABLED TERTIARY</button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/block_pointer.png" alt="" />
+                </td>
+              </tr>
+              <!-- LOADING BUTTON -->
+              <tr>
+                <td class="leftHeader">LOADING</td>
+                <td>
+                  <button id="btn-loading-primary">
+                    <img src="/assets/loading.png" alt="" />
+                    LOADING PRIMARY
+                  </button>
+                </td>
+                <td>
+                  <button id="btn-loading-secondary">
+                    <img src="/assets/loading.png" alt="" />
+                    LOADING SECONDARY
+                  </button>
+                </td>
+                <td>
+                  <button id="btn-loading-tertiary">
+                    <img src="/assets/loading.png" alt="" />
+                    LOADING TERTIARY
+                  </button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/loading_pointer.svg" alt="" />
+                </td>
+              </tr>
+              <!-- DISABLE BUTTON -->
+              <tr>
+                <td class="leftHeader">MOVABLE</td>
+                <td>
+                  <button id="btn-movable-primary">
+                    <img src="/assets/reorder_white.svg" alt="" />
+                    MOVABLE PRIMARY
+                  </button>
+                </td>
+                <td>
+                  <button id="btn-movable-secondary">
+                    <img src="/assets/reorder_white.svg" alt="" />
+                    MOVABLE SECONDARY
+                  </button>
+                </td>
+                <td>
+                  <button id="btn-movable-tertiary">
+                    <img src="/assets/reorder_white.svg" alt="" />
+                    MOVABLE TERTIARY
+                  </button>
+                </td>
+                <td class="cursor">
+                  <img src="/assets/move_pointer.svg" alt="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="teste">
+        <div class="titulo">
+          <h1>Teste os botões</h1>
+          <p>
+            Interaja com os botões e observe a mudança de aparência e de
+            cursores.
+          </p>
+        </div>
+        <div class="botoes">
+          <button id="btn-color">INTERAJA COMIGO</button>
+          <button id="btn-nocolor">INTERAJA COMIGO</button>
+          <button id="btn-null">INTERAJA COMIGO</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
