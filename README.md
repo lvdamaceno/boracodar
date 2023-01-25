@@ -1,4 +1,5 @@
 # boraCodar
+
 Repositório dos projetos do desafio Bora Codar da Rocketseat
 
 [Acesse os desafios clicando aqui](https://boracodar.dev)
@@ -21,8 +22,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
       </tr>
       <tr>
         <td>02</td>
-        <td>Product Cars</td>
+        <td>Product Cards</td>
         <td>18/01/2023</td>
         <td><a href="desafio02-card-de-produto">🔗</a></td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>Buttons</td>
+        <td>24/01/2023</td>
+        <td><a href="desafio03-botoes-cursores">🔗</a></td>
       </tr>
     </tbody>
