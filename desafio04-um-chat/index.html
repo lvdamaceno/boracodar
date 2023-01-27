@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Um Chat</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="contact">
+        <div class="contact-info">
+          <div class="avatar-tag">
+            <!-- AVATAR IMG -->
+            <figure class="circle-avatar"></figure>
+            <!-- NAME AND STATUS -->
+            <div class="person">
+              <h1>Jhon Doe</h1>
+              <div class="status">
+                <figure class="circle-status"></figure>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+          <!-- CLOSE BUTTON -->
+          <i class="ph-x-bold" id="close"></i>
+        </div>
+        <!-- DATE TIME -->
+        <p class="date-time">Hoje 11:30</p>
+      </div>
+      <div class="messages">
+        <div class="chat" id="left">
+          <p class="name-time">Jhon Doe - 11:30</p>
+          <p class="message">Tive uma idéia para um projeto!</p>
+        </div>
+        <div class="chat" id="right">
+          <p class="name-time">Você - 11:32</p>
+          <p class="message">Sério? Me conta</p>
+        </div>
+        <div class="chat" id="left">
+          <p class="name-time">Jhon Doe - 11:34</p>
+          <p class="message">
+            E se a gente fizesse um chat moderno e responsivo em apenas uma
+            semana?
+          </p>
+        </div>
+        <div class="chat" id="right">
+          <p class="name-time">Você - 11:36</p>
+          <p class="message">#boraCodar</p>
+        </div>
+      </div>
+      <div class="message-input">
+        <input type="text" placeholder="Digite sua mensagem" />
+        <i class="ph-paper-plane-right-bold"></i>
+      </div>
+    </div>
+  </body>
+</html>
