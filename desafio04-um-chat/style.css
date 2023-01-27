@@ -61,6 +61,13 @@ body {
   margin: 0;
 }
 
+img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .circle-status {
   display: block;
   background: #00b37e;
