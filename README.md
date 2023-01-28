@@ -20,18 +20,21 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td>Music Player</td>
         <td>11/01/2023</td>
         <td><a href="desafio01-player-de-musica">🔗</a></td>
+        <td><a href="#">🌎</a></td>
       </tr>
       <tr>
         <td>02</td>
         <td>Product Cards</td>
         <td>18/01/2023</td>
         <td><a href="desafio02-card-de-produto">🔗</a></td>
+        <td><a href="#">🌎</a></td>
       </tr>
       <tr>
         <td>03</td>
         <td>Buttons</td>
         <td>24/01/2023</td>
         <td><a href="desafio03-botoes-cursores">🔗</a></td>
+        <td><a href="#">🌎</a></td>
       </tr>
       <tr>
         <td>04</td>
