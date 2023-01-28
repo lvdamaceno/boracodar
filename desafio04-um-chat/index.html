@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="/script.js"></script>
     <title>Um Chat</title>
   </head>
   <body>
@@ -41,7 +42,7 @@
         <!-- DATE TIME -->
         <p class="date-time">Hoje 11:30</p>
       </div>
-      <div class="messages">
+      <div class="messages scroll">
         <div class="chat" id="left">
           <p class="name-time">Jessie Doe - 11:30</p>
           <p class="message">Qual é o segredo da felicidade? &#128512;</p>
@@ -64,7 +65,7 @@
         </div>
       </div>
       <div class="message-input">
-        <input type="text" placeholder="Digite sua mensagem" />
+        <input type="text" placeholder="Digite sua mensagem" onclick="getVal()"/>
         <i class="ph-paper-plane-right-bold"></i>
       </div>
     </div>

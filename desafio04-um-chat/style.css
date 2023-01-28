@@ -15,7 +15,7 @@ body {
 }
 
 .app {
-  width: 680px;
+  width: 780px;
   height: fit-content;
 }
 
@@ -92,10 +92,31 @@ img {
 }
 
 /* MESSAGES */
+.chat {
+  margin-right: 10px;
+}
+
 .messages {
   display: grid;
   gap: 32px;
   margin-bottom: 30px;
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px;
+  border: 1px #282843 solid;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 100px #282843;
 }
 
 .name-time {
@@ -123,7 +144,6 @@ img {
   background: #07847e;
   border-radius: 8px 8px 0px 8px;
   margin-left: auto;
-  margin-right: 0;
 }
 
 #left .message {
@@ -168,4 +188,47 @@ input::placeholder {
   font-size: 12px;
   line-height: 14px;
   color: #e1e1e6;
+}
+
+@media (max-width: 700px) {
+  /* APP */
+  .app {
+    width: 310px;
+    height: fit-content;
+  }
+
+  /* DATE AND TIME */
+  .date-time {
+    padding-top: 15px;
+  }
+
+  /* MESSAGES */
+
+  .messages {
+    padding-top: 15px;
+  }
+  #right {
+    text-align: right;
+  }
+
+  #right .message {
+    padding: 14px;
+    gap: 10px;
+    width: 150px;
+    height: fit-content;
+    background: #07847e;
+    border-radius: 8px 8px 0px 8px;
+    margin-left: auto;
+    margin-right: 0;
+    line-height: 16px;
+  }
+
+  #left .message {
+    padding: 14px;
+    gap: 10px;
+    width: 150px;
+    height: fit-content;
+    background: #633bbc;
+    border-radius: 0px 8px 8px 8px;
+  }
 }
