@@ -10,7 +10,8 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <th>#</th>
         <th>name</th>
         <th>dates</th>
-        <th>view</th>
+        <th>source code</th>
+        <th>live</th>
       </tr>
     </thead>
     <tbody>
@@ -31,5 +32,12 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td>Buttons</td>
         <td>24/01/2023</td>
         <td><a href="desafio03-botoes-cursores">🔗</a></td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>A Chat</td>
+        <td>27/01/2023</td>
+        <td><a href="desafio04-um-chat">🔗</a></td>
+        <td><a href="https://boracodar-pi.vercel.app">🌎</a></td>
       </tr>
     </tbody>
