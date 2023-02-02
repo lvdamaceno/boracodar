@@ -41,6 +41,13 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td>A Chat</td>
         <td>27/01/2023</td>
         <td><a href="desafio04-um-chat">🔗</a></td>
-        <td><a href="https://boracodar-pi.vercel.app">🌎</a></td>
+        <td><a href="#">🌎</a></td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td>A Calculator</td>
+        <td>27/01/2023</td>
+        <td><a href="desafio04-uma-calculador">🔗</a></td>
+        <td><a href="#">🌎</a></td>
       </tr>
     </tbody>
