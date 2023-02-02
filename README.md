@@ -2,7 +2,7 @@
 
 Repositório dos projetos do desafio Bora Codar da Rocketseat
 
-[Acesse os desafios clicando aqui](https://boracodar.dev)
+[Acesse os desafios clicando aqui](https://lvdamaceno.github.io/boracodar/)
 
 <table>
     <thead>
