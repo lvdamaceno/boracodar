@@ -11,8 +11,9 @@ Tema: Desenvolver uma calculadora.
 </div>
 
 <p align="center">
-  <img alt="imagem do projeto" src="">
+  <img alt="imagem do projeto" src="https://user-images.githubusercontent.com/7557802/216215064-e9d992da-05cc-43e6-b104-7c7c3d65b8d6.png">
 </p>
+
 
 ## 🚀 Tecnologias
 
