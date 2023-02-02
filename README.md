@@ -10,7 +10,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <th>#</th>
         <th>name</th>
         <th>dates</th>
-        <th>source code</th>
+        <th>code</th>
         <th>live</th>
       </tr>
     </thead>
@@ -47,7 +47,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td>05</td>
         <td>A Calculator</td>
         <td>27/01/2023</td>
-        <td><a href="desafio04-uma-calculador">🔗</a></td>
+        <td><a href="desafio05-uma-calculador">🔗</a></td>
         <td><a href="#">🌎</a></td>
       </tr>
     </tbody>
