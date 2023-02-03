@@ -4,25 +4,52 @@
   box-sizing: border-box;
 }
 body {
-  margin-top: 100px;
+  margin: 50px 0px;
+  background-color: #cbc3e3;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
-#project-list {
-  width: 800px;
+.app {
+  width: 1000px;
   margin: auto auto;
 }
 
-h1 {
+.title {
   text-align: center;
   margin-bottom: 25px;
+  font-weight: 100;
 }
 
-table {
-  width: inherit;
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
 }
 
-table td {
-  border: 1px solid gray;
-  text-align: center;
-  padding: 25px 0;
+.projects-list #project {
+  width: 300px;
+  height: 300px;
+}
+
+#project img {
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
+
+#project img:hover {
+  border: 3px purple solid;
+  opacity: 50%;
+}
+
+@media (max-width: 400px) {
+  body {
+    margin-bottom: 50px;
+  }
+  .app {
+    width: 300px;
+    margin: auto auto;
+  }
 }
