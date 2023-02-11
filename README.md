@@ -50,4 +50,11 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td><a href="desafio05-uma-calculadora">🔗</a></td>
         <td><a href="#">🌎</a></td>
       </tr>
+      <tr>
+        <td>05</td>
+        <td>A Boarding Ticket</td>
+        <td>10/02/2023</td>
+        <td><a href="desafio06-cartao-embarque">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio06-cartao-embarque/index.html">🌎</a></td>
+      </tr>
     </tbody>
