@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  border-radius: 32px;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Rubik', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.02px;
+  color: #fff;
+}
+
+#boarding-pass {
+  width: 325px;
+  height: fit-content;
+  text-align: center;
+}
+
+#boarding-pass h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#boarding-pass p {
+  font-size: 14px;
+  opacity: 0.64;
+  font-weight: 400;
+}
+
+#divider {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+}
+
+#ticket {
+  height: fit-content;
+  margin: 20px 0px;
+  color: black;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+#ticket h1 {
+  font-size: 40px;
+  margin: 15px 0px;
+  font-weight: 500;
+}
+
+#ticket h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wrapper {
+  height: fit-content;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  width: 263px;
+}
+
+#plane {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#plane img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#flight-info {
+  height: 191px;
+  background-color: #fff;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+}
+
+#passanger-info {
+  height: 84px;
+  background-color: #fff;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+}
+
+#boarding-info {
+  height: 269px;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+}
+
+.boarding-info span {
+  background-color: #633bbc;
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: #fff;
+  display: block;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.boarding-info div {
+  margin: 16px 0px;
+}
+
+#qrcode {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
