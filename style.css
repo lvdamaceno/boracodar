@@ -52,6 +52,7 @@ body {
   height: 300px;
   border-radius: 25px;
   position: absolute;
+  object-fit: cover;
 }
 
 /* HOVER CAPTION */

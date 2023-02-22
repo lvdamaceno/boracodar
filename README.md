@@ -15,7 +15,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
       </tr>
     </thead>
     <tbody>
-        <tr>
+      <tr>
+        <td>07</td>
+        <td>Find a street carnival party</td>
+        <td>10/02/2023</td>
+        <td><a href="desafio07-bloco-carnaval">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio07-bloco-carnaval/index.html">🌎</a></td>
+      </tr>
+      <tr>
         <td>06</td>
         <td>A Boarding Ticket</td>
         <td>10/02/2023</td>
