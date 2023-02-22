@@ -36,7 +36,7 @@ body {
   flex-wrap: wrap;
   gap: 35px;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .projects-list #project {
@@ -90,22 +90,23 @@ footer {
   justify-content: center;
   font-size: 24px;
   font-weight: 400;
+  padding-bottom: 50px;
 }
 
 footer a {
   color: black;
 }
 
-/* 
 @media (max-width: 1000px) {
-  body {
-    margin-bottom: 50px;
-  }
   .app {
-    width: 900px;
-    margin: auto auto;
+    width: 700px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-} */
+}
 
 @media (max-width: 500px) {
   .app {
