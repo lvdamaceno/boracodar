@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background-color: #292738;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5.9rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 160%;
+  padding-inline: 4.8rem;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+section {
+  padding: 29px 48px;
+  background: #363447;
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: fit-content;
+}
+
+.circle-blank {
+  display: block;
+  background: #4a4556;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.circle-sales {
+  display: block;
+  background: linear-gradient(121.94deg, #ce9ffc 15.98%, #7367f0 82.85%);
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+.circle-goal {
+  display: block;
+  background: linear-gradient(121.94deg, #df9780 15.98%, #a66de9 82.85%);
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
+}
+
+/* SECTION LEFT */
+section.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3.2rem;
+}
+section.left .smile {
+  color: #81fbb8;
+  font-size: 50px;
+}
+section.left .smile i {
+  font-size: 3.2rem;
+}
+/* SECTION MIDDLE */
+section.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.2rem;
+  align-items: center;
+}
+/* SECTION RIGHT */
+section.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.2rem;
+  align-items: center;
+}
+/* SECTION GOALS */
+.donut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  border: 30px solid #4a4556;
+  margin: 0;
+}
+.donut span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 160%;
+}
+.donut p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+}
+.goals {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.goal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#container {
+  width: fit-content;
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+}
