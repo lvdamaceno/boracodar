@@ -16,6 +16,13 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
       <tr>
+        <td>08</td>
+        <td>A Dashnoard</td>
+        <td>28/02/2023</td>
+        <td><a href="desafio08-dashboard">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio08-dashboard/index.html">🌎</a></td>
+      </tr>
+      <tr>
         <td>07</td>
         <td>Find a street carnival party</td>
         <td>10/02/2023</td>
