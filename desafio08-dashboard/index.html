@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Dashboard</title>
   </head>
   <body>
@@ -29,7 +30,7 @@
 
       <section class="middle">
         <h1>Vendas fechadas</h1>
-        <div class="donut">
+        <div class="donut dsales">
           <span>70%</span>
           <p>alcançada</p>
         </div>
@@ -47,7 +48,7 @@
 
       <section class="right">
         <h1>Meta mensal</h1>
-        <div class="donut">
+        <div class="donut dgoal">
           <span>90%</span>
           <p>alcançada</p>
         </div>
@@ -64,30 +65,60 @@
       </section>
     </div>
 
-    <div id="container">
+    <div id="container2">
       <!-- SECOND LINE -->
-      <section>
-        <div>
-          <h1>Vendas por dia da semana</h1>
-          <div>
-            <div>
-              <img src="" alt="" />
-              <p>Dia com mais vendas</p>
+      <div id="wrapper">
+        <h1>Vendas por dia da semana</h1>
+        <div class="analysis">
+          <div id="data">
+            <div class="frame">
+              <div class="arrow">
+                <i class="ph-arrow-fat-up-fill"></i>
+                <p>Dia com mais vendas</p>
+              </div>
+              <h1>Quarta-feira</h1>
             </div>
-            <h1>Quarta-feira</h1>
+            <div class="frame">
+              <div class="arrow">
+                <i class="ph-arrow-fat-down-fill"></i>
+                <p>Dia com menos vendas</p>
+              </div>
+              <h1>Domingo</h1>
+            </div>
           </div>
-          <div>
-            <div>
-              <img src="" alt="" />
-              <p>Dia com menos vendas</p>
+          <div id="graph">
+            <div class="horizontal-line"></div>
+            <div class="graph-column">
+              <div class="bar dom"></div>
+              <p>dom</p>
             </div>
-            <h1>Domingo</h1>
+            <div class="graph-column">
+              <div class="bar seg"></div>
+              <p>seg</p>
+            </div>
+            <div class="graph-column">
+              <div class="bar ter"></div>
+              <p>ter</p>
+            </div>
+            <div class="graph-column">
+              <div class="bar qua"></div>
+              <p>qua</p>
+            </div>
+            <div class="graph-column">
+              <div class="bar qui"></div>
+              <p>qui</p>
+            </div>
+            <div class="graph-column">
+              <div class="bar sex"></div>
+              <p>sex</p>
+            </div>
+            <div class="graph-column">
+              <div class="bar sab"></div>
+              <p>sab</p>
+            </div>
           </div>
         </div>
-        <div>
-          <!-- WEEK GRAPH -->
-        </div>
-      </section>
+      </div>
     </div>
   </body>
 </html>

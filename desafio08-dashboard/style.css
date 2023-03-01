@@ -23,7 +23,7 @@ body {
   gap: 5.9rem;
 }
 
-h1 {
+#container h1 {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 160%;
@@ -109,11 +109,17 @@ section.right {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
-  border: 30px solid #4a4556;
-  margin: 0;
+  /* border-radius: 50%; */
+  height: 19.7rem;
+  width: 19.7rem;
+  /* border: 30px solid #4a4556; */
+  /* margin: 0; */
+}
+.donut.dsales {
+  background-image: url(./assets/svg/sales.svg);
+}
+.donut.dgoal {
+  background-image: url(./assets/svg/goal.svg);
 }
 .donut span {
   font-style: normal;
@@ -143,4 +149,102 @@ section.right {
   display: flex;
   gap: 3.2rem;
   justify-content: center;
+}
+
+#container2 h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+#wrapper {
+  padding: 29px 48px;
+  background: #363447;
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: 116rem;
+}
+
+.analysis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+#data {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.ph-arrow-fat-up-fill {
+  color: #81fbb8;
+}
+
+.ph-arrow-fat-down-fill {
+  color: #feb692;
+}
+
+#graph {
+  display: flex;
+  gap: 5.9rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#graph .horizontal-line {
+  width: 523px;
+  height: 3px;
+  left: 0px;
+  top: calc(50% - 3px / 2 - 0.5px);
+  background: #4a4556;
+  border-radius: 999px;
+  position: absolute;
+  z-index: 0;
+}
+
+.graph-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  z-index: 1;
+}
+
+.bar {
+  width: 1.5rem;
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+  border-radius: 999px;
+}
+
+.dom {
+  height: 4rem;
+}
+.seg {
+  height: 11.5rem;
+}
+.ter {
+  height: 7.5rem;
+}
+.qua {
+  height: 16rem;
+}
+.qui {
+  height: 13rem;
+}
+.sex {
+  height: 12rem;
+}
+.sab {
+  height: 7rem;
 }
