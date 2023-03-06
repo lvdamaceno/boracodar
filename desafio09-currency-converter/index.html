@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter">
+        <h1>Conversor de moedas</h1>
+        <div id="converter">
+          <div class="currency">
+            <div>
+              <input type="text" placeholder="$ 1.000" />
+            </div>
+            <div class="divider"></div>
+            <div id="choose-currency">
+              <!-- <img src="https://source.unsplash.com/random" alt="" /> -->
+              <!-- img font:https://flagpedia.net/the-united-states/download/api -->
+              <img
+                id="flag"
+                src="https://flagcdn.com/w20/us.png"
+                srcset="https://flagcdn.com/w40/us.png 2x"
+                width="24"
+                alt="United States"
+              />
+              <label for="currency-list"></label>
+              <select name="currency-list" id="currency-list">
+                <option value="usd" selected>USD</option>
+                <option value="brl">BRL</option>
+              </select>
+              <img src="./assets/down.svg" alt="" />
+            </div>
+          </div>
+          <div class="arrows-exchange">
+            <img src="./assets/arrows-exchange.svg" alt="" />
+          </div>
+          <div class="currency">
+            <div>
+              <input type="text" placeholder="R$ 5.148,20" />
+            </div>
+            <div class="divider"></div>
+
+            <div id="choose-currency">
+              <img
+                id="flag"
+                src="https://flagcdn.com/w20/br.png"
+                srcset="https://flagcdn.com/w40/br.png 2x"
+                width="24"
+                alt="Brazil"
+              />
+              <label for="currency-list"></label>
+              <select name="currency-list" id="currency-list">
+                <option value="usd">USD</option>
+                <option value="blr" selected>BRL</option>
+              </select>
+              <img src="./assets/down.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exchange">
+        <h1>Taxa de câmbio</h1>
+        <img src="./assets/Chart.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
