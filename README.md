@@ -15,9 +15,23 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
       </tr>
     </thead>
     <tbody>
+    <tr>
+        <td>10</td>
+        <td>Weather Dashboard</td>
+        <td>28/02/2023</td>
+        <td><a href="desafio10-clima">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio10-clima/index.html">🌎</a></td>
+      </tr>
+    <tr>
+        <td>09</td>
+        <td>A Currency Converter</td>
+        <td>28/02/2023</td>
+        <td><a href="desafio09-currency-converter">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio09-currency-converter/index.html">🌎</a></td>
+      </tr>
       <tr>
         <td>08</td>
-        <td>A Dashnoard</td>
+        <td>A Dashboard</td>
         <td>28/02/2023</td>
         <td><a href="desafio08-dashboard">🔗</a></td>
         <td><a href="https://lvdamaceno.github.io/boracodar/desafio08-dashboard/index.html">🌎</a></td>
