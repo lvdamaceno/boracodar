@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Clima</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="left">
+        <div class="temperature">
+          <div class="big-cloud"></div>
+          <div class="location">
+            <i class="ph-fill ph-map-pin"></i>
+            Belém, PA
+          </div>
+          <div class="temperature_now">
+            <div class="top">18 <span>°C</span></div>
+            <div class="bottom">
+              <div class="max">22°</div>
+              <div class="min secondary_color">16°</div>
+            </div>
+          </div>
+          <div class="infos">
+            <div class="info wind">
+              <i class="ph-fill ph-wind"></i>
+              <div class="container">
+                <h2>Vento</h2>
+                <h1>17<span>km/h</span></h1>
+              </div>
+            </div>
+            <div class="info humidity">
+              <i class="ph-fill ph-drop"></i>
+              <div class="container">
+                <h2>Umidade</h2>
+                <h1>31<span>%</span></h1>
+              </div>
+            </div>
+            <div class="info rain">
+              <i class="ph-fill ph-cloud-rain"></i>
+              <div class="container">
+                <h2>Chuva</h2>
+                <h1>10<span>%</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="air bg-infos">
+          <div class="top">
+            <i class="ph-fill ph-leaf"></i>
+            <span>Qualidade do ar</span>
+          </div>
+          <div class="middle">
+            <p>Boa</p>
+            <h1>21</h1>
+          </div>
+          <div class="bottom">
+            <div class="measurements">
+              <div class="measurement">
+                <h1>12.9</h1>
+                <p>PM2.5</p>
+              </div>
+              <div class="measurement">
+                <h1>12.9</h1>
+                <p>PM10</p>
+              </div>
+              <div class="measurement">
+                <h1>2.1</h1>
+                <p>SO <sub>2</sub></p>
+              </div>
+              <div class="measurement">
+                <h1>1.4</h1>
+                <p>NO <sub>2</sub></p>
+              </div>
+              <div class="measurement">
+                <h1>21.2</h1>
+                <p>O <sub>3</sub></p>
+              </div>
+              <div class="measurement">
+                <h1>0.7</h1>
+                <p>CO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sun bg-infos">
+          <div class="top">
+            <i class="ph-fill ph-sun"></i>
+            <span>Horário do sol</span>
+          </div>
+          <div class="middle"></div>
+          <div class="bottom">
+            <div class="start">06:12</div>
+            <div class="end">18:52</div>
+          </div>
+        </div>
+        <div class="week bg-infos">
+          <div class="days">
+            <div class="day">
+              <h1>Amanhã</h1>
+              <img src="./assets/cloudy.svg" alt="" />
+              <div class="bottom">
+                <div class="max">21°</div>
+                <div class="min">16°</div>
+              </div>
+            </div>
+            <div class="day">
+              <h1>Sexta-feira</h1>
+              <img src="./assets/sun.svg" alt="" />
+              <div class="bottom">
+                <div class="max">28°</div>
+                <div class="min">20°</div>
+              </div>
+            </div>
+            <div class="day">
+              <h1>Sábado</h1>
+              <img src="./assets/rain.svg" alt="" />
+              <div class="bottom">
+                <div class="max">25°</div>
+                <div class="min">21°</div>
+              </div>
+            </div>
+            <div class="day">
+              <h1>Domingo</h1>
+              <img src="./assets/storm.svg" alt="" />
+              <div class="bottom">
+                <div class="max">20°</div>
+                <div class="min">14°</div>
+              </div>
+            </div>
+            <div class="day">
+              <h1>Segunda-Feira</h1>
+              <img src="./assets/sun.svg" alt="" />
+              <div class="bottom">
+                <div class="max">24°</div>
+                <div class="min">18°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

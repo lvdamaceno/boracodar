@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: url(./assets/bg_app.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Lato';
+  color: #fff;
+}
+
+.bg-infos {
+  background: #6d67d0;
+  backdrop-filter: blur(1rem);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 1rem;
+}
+
+.secondary_color {
+  color: #c2bff4;
+}
+
+.app {
+  display: flex;
+  gap: 3.2rem;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'air sun'
+    'week week';
+}
+
+/* TEMPERATURE */
+
+.temperature {
+  background-image: url(./assets/temperature.png);
+  border-radius: 1rem;
+  width: 48rem;
+  height: 48rem;
+  position: relative;
+}
+
+.big-cloud::before {
+  content: url(./assets/big_cloud.svg);
+}
+
+.big-cloud {
+  position: absolute;
+  top: -5.6rem;
+  left: -5.6rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: flex-end;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #c2bff4;
+  position: absolute;
+  right: 3.2rem;
+  top: 3rem;
+}
+
+.temperature_now {
+  position: absolute;
+  top: 11rem;
+  left: calc(50% - 10.3rem / 2 - 0.5rem);
+}
+
+.temperature_now .top {
+  font-size: 8.8rem;
+  line-height: 10.6rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.temperature_now .top span {
+  font-size: 2.4rem;
+  position: absolute;
+  right: -3rem;
+  top: -2rem;
+}
+
+.temperature_now .bottom {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.temperature .infos {
+  display: flex;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  margin: 1.2rem;
+}
+
+.temperature .infos i {
+  font-size: 3.2rem;
+  opacity: 0.4;
+}
+
+.temperature .info {
+  width: 14.66rem;
+  padding: 1.2rem 1.6rem;
+  background: rgba(102, 96, 200, 0.6);
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.temperature .info h2 {
+  color: #e7e6fb;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.temperature .info h1 {
+  color: #e7e6fb;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.temperature .info span {
+  color: #dad8f7;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+/* AIR */
+.air {
+  grid-area: air;
+  width: 27.7rem;
+  height: 24.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.air i {
+  font-size: 2.4rem;
+  color: #dad8f7;
+}
+
+.air .top {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.air .top span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #dad8f7;
+}
+
+.air .middle {
+  display: grid;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.air .middle p {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #87ebcd;
+}
+
+.air .middle h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #e7e6fb;
+}
+
+.air .measurements {
+  margin: 0 1.6rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.air .measurement h1 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #87ebcd;
+}
+
+.air .measurement p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #e7e6fb;
+}
+
+/* SUN */
+.sun {
+  grid-area: sun;
+  width: 27.7rem;
+  height: 24.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sun i {
+  font-size: 2.4rem;
+  color: #dad8f7;
+}
+
+.sun .top {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun .top span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #dad8f7;
+}
+
+.sun .middle {
+  width: 21.2rem;
+  height: 10.6rem;
+  margin: auto;
+  border-bottom: 0.2rem solid #f6c833;
+}
+
+.sun .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.8rem 1.6rem 1.8rem;
+}
+
+/* WEEK */
+.week {
+  grid-area: week;
+  width: 57.8rem;
+  height: 21.2rem;
+}
+
+.days {
+  display: flex;
+  gap: 1.2rem;
+  margin: 4rem;
+  justify-content: center;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.day img {
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 0 1.3rem 0 1rem;
+}
+
+.day h1 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #dad8f7;
+  text-align: center;
+}
+
+.day .bottom {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.day .bottom .min {
+  color: #c2bff4;
+}
