@@ -6,3 +6,4 @@ Página de login
 
 - [ ] Estilzar os estados dos inputs seguindo o projeto
 - [ ] Fazer o botão de esconder/aparecer a senha funcionar ao clicar
+- [ ] Centralizar layout do mobile para nao haver scroll
