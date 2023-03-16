@@ -16,16 +16,23 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>11</td>
+        <td>Login</td>
+        <td>15/03/2023</td>
+        <td><a href="desafio11-clima">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio11-login/index.html">🌎</a></td>
+      </tr>
+    <tr>
         <td>10</td>
         <td>Weather Dashboard</td>
-        <td>28/02/2023</td>
+        <td>14/03/2023</td>
         <td><a href="desafio10-clima">🔗</a></td>
         <td><a href="https://lvdamaceno.github.io/boracodar/desafio10-clima/index.html">🌎</a></td>
       </tr>
     <tr>
         <td>09</td>
         <td>A Currency Converter</td>
-        <td>28/02/2023</td>
+        <td>06/03/2023</td>
         <td><a href="desafio09-currency-converter">🔗</a></td>
         <td><a href="https://lvdamaceno.github.io/boracodar/desafio09-currency-converter/index.html">🌎</a></td>
       </tr>
@@ -39,7 +46,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
       <tr>
         <td>07</td>
         <td>Find a street carnival party</td>
-        <td>10/02/2023</td>
+        <td>22/02/2023</td>
         <td><a href="desafio07-bloco-carnaval">🔗</a></td>
         <td><a href="https://lvdamaceno.github.io/boracodar/desafio07-bloco-carnaval/index.html">🌎</a></td>
       </tr>
