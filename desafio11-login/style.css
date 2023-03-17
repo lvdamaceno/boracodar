@@ -211,7 +211,9 @@ button:hover {
   /* … */
 
   body {
+    align-items: center;
     justify-content: center;
+    height: 100vh;
   }
 
   body::before {
