@@ -209,6 +209,11 @@ button:hover {
 
 @media (max-width: 40rem) {
   /* … */
+
+  body {
+    justify-content: center;
+  }
+
   body::before {
     opacity: 0;
   }
