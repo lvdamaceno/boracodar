@@ -12,6 +12,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Login</title>
   </head>
@@ -28,25 +32,45 @@
         </p>
       </div>
       <div id="form">
-        <div class="input">
-          <p>E-mail</p>
-          <input type="text" placeholder="Digite seu e-mail" />
-        </div>
-        <div class="input">
-          <div id="container">
-            <p>Senha</p>
-            <p class="purple">Esqueceu a senha?</p>
+        <form action="">
+          <div class="input">
+            <p>E-mail</p>
+            <input type="email" placeholder="Digite seu e-mail" />
           </div>
-          <div id="password">
-            <input type="text" placeholder="Digite sua senha" />
-            <img src="./assets/eye-off.svg" alt="" />
+          <div class="input">
+            <div id="container">
+              <p>Senha</p>
+              <p class="purple">Esqueceu a senha?</p>
+            </div>
+            <div id="password">
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                id="psswd"
+              />
+              <!-- <img src="./assets/eye-off.svg" alt="" id="eye" /> -->
+              <i class="fa-solid fa-eye" id="eye"></i>
+            </div>
           </div>
-        </div>
+          <button>Entrar</button>
+        </form>
       </div>
       <div id="footer">
-        <button>Entrar</button>
-        <p>Ainda não tem uma conta? <span>Increva-se</span></p>
+        <p>Ainda não tem uma conta? <a href="#">Inscreva-se</a></p>
       </div>
     </div>
+    <script>
+      const passwordInput = document.querySelector('#psswd');
+      const eye = document.querySelector('#eye');
+
+      eye.addEventListener('click', function () {
+        this.classList.toggle('fa-eye-slash');
+        const type =
+          passwordInput.getAttribute('type') === 'password'
+            ? 'text'
+            : 'password';
+        passwordInput.setAttribute('type', type);
+      });
+    </script>
   </body>
 </html>
