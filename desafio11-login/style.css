@@ -51,14 +51,15 @@ p {
 
 #logo {
   position: absolute;
-  top: 5%;
-  left: 7%;
+  z-index: 1;
 }
 
 #content {
   width: 38.4rem;
   margin-left: 11.2rem;
   height: fit-content;
+  position: relative;
+  z-index: 0;
 }
 
 /* HEADER */
