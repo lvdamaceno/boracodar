@@ -30,18 +30,15 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.5rem;
+  gap: 2rem;
   justify-content: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
-  border: 1px red solid;
 }
 
 .projects-list #project {
   width: 35rem;
   height: 30rem;
-}
-#project {
   position: relative;
 }
 
@@ -93,4 +90,58 @@ footer {
 
 footer a {
   color: black;
+}
+
+/* BUTTONS */
+.link-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-buttons a {
+  width: 20rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem purple solid;
+  text-decoration: none;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+i {
+  font-size: 2.5rem;
+}
+
+.link-buttons a:hover {
+  color: #fff;
+  font-weight: 400;
+  background-color: purple;
+  box-shadow: 0px 15px 20px rgb(250, 175, 250);
+  color: #fff;
+  transform: translateY(-0.5rem);
+}
+
+@media (max-width: 80rem) {
+  .app {
+    width: 80rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .app {
+    width: 40rem;
+  }
 }
