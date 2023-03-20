@@ -37,14 +37,14 @@ body {
 }
 
 .projects-list #project {
-  width: 35rem;
-  height: 30rem;
+  width: 36rem;
+  height: 32rem;
   position: relative;
 }
 
 #project img {
-  width: 35rem;
-  height: 30rem;
+  width: 36rem;
+  height: 32rem;
   border-radius: 1rem;
   position: absolute;
   object-fit: cover;
@@ -166,6 +166,11 @@ i {
   text-align: justify;
 }
 
+.caption p.stack {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 .link-buttons a:hover {
   color: #fff;
   font-weight: 400;
@@ -184,6 +189,11 @@ i {
 @media (max-width: 40rem) {
   .app {
     width: 40rem;
+  }
+  .projects-list #project {
+    width: 35rem;
+    height: 33rem;
+    position: relative;
   }
 
   .image-caption {
@@ -230,6 +240,11 @@ i {
     /* box-shadow: 0px 15px 20px rgb(250, 175, 250); */
     color: #fff;
     /* transform: translateY(-0.5rem); */
+  }
+
+  .link-buttons a:hover {
+    transform: none;
+    box-shadow: none;
   }
 
   #project img {
