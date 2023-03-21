@@ -12,7 +12,15 @@
 
 body {
   font-size: 1.6rem;
-  background-color: #cbc3e3;
+  /* background-color: #cbc3e3; */
+  /* background: radial-gradient(135deg, #cbc3e3 60%, #fff) no-repeat; */
+  background: radial-gradient(
+    farthest-corner at 0px 0px,
+    #fff,
+    rgb(176, 130, 176)
+  );
+  background-attachment: fixed;
+  /* height: 100vh; */
   color: black;
   font-family: 'Roboto', sans-serif;
 }
@@ -83,7 +91,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   padding-bottom: 5rem;
 }
@@ -190,6 +198,14 @@ i {
 }
 
 @media (max-width: 40rem) {
+  body {
+    background: radial-gradient(
+      farthest-corner at 0px 0px,
+      rgb(176, 130, 176),
+      #fff
+    );
+    background-attachment: fixed;
+  }
   .app {
     width: 40rem;
   }
@@ -257,5 +273,9 @@ i {
     position: absolute;
     object-fit: cover;
     margin: 1rem;
+  }
+
+  footer {
+    font-size: 1.6rem;
   }
 }
