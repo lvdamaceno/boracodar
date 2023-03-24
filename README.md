@@ -16,6 +16,13 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>12</td>
+        <td>Kanban</td>
+        <td>23/03/2023</td>
+        <td><a href="desafio12-kanban">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio12-kanban/index.html">🌎</a></td>
+      </tr>
+    <tr>
         <td>11</td>
         <td>Login</td>
         <td>16/03/2023</td>
