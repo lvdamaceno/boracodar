@@ -15,12 +15,6 @@ body {
   font-size: 1.6rem;
   background: #7c3aed;
 }
-/* 
-input,
-button {
-  all: unset;
-  box-sizing: border-box;
-} */
 
 .active {
   color: #fff;
@@ -244,7 +238,7 @@ i.ph-magnifying-glass {
 .tag {
   padding: 4px 8px;
   gap: 10px;
-  width: 72px;
+  width: fit-content;
   height: 22px;
   background: #e2d6ff;
   border-radius: 8px;
