@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Kanban</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="menu">
+        <div id="logo">
+          <img src="./assets/logo.svg" alt="" />
+        </div>
+        <div id="menu-itens">
+          <a href=""
+            ><button>
+              <i class="ph-fill ph-clipboard active">Boards</i>
+            </button></a
+          >
+          <a href="">
+            <button>
+              <i class="ph-fill ph-users-three">Equipes</i>
+            </button>
+          </a>
+          <a href="">
+            <button>
+              <i class="ph-fill ph-file-text">Relatórios</i>
+            </button>
+          </a>
+          <a href="">
+            <button>
+              <i class="ph-fill ph-gear-fine">Ajustes</i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div id="panel">
+        <div id="header">
+          <div id="title">
+            <h1>Meu Kanban</h1>
+            <i class="ph-fill ph-eraser"></i>
+          </div>
+          <img src="https://source.unsplash.com/random/?person" alt="" />
+        </div>
+        <div id="search">
+          <button>
+            <i class="ph ph-funnel-simple"></i>
+            Filtrar
+          </button>
+          <div id="searchbar">
+            <i class="ph ph-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Busque por card, assuntos ou responsáveis..."
+            />
+          </div>
+        </div>
+        <div id="columns">
+          <div class="column">
+            <h1>A fazer</h1>
+            <div class="cards">
+              <div class="card">
+                <h2>#boraCoda um Kanban</h2>
+                <p>
+                  Novo desafio do #boraCodar da Rocketseat, onde é proposto
+                  construir um quadro de Kanban.
+                </p>
+                <div class="tags">
+                  <div class="tag"><p>rocketseat</p></div>
+                  <div class="tag"><p>desafio</p></div>
+                </div>
+              </div>
+              <div class="card">
+                <h2></h2>
+                <p></p>
+                <div class="tags">
+                  <div class="tag"></div>
+                  <div class="tag"></div>
+                </div>
+              </div>
+              <div class="card">
+                <h2></h2>
+                <p></p>
+                <div class="tags">
+                  <div class="tag"></div>
+                  <div class="tag"></div>
+                </div>
+              </div>
+              <div class="card">
+                <h2></h2>
+                <p></p>
+                <div class="tags">
+                  <div class="tag"></div>
+                  <div class="tag"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h1>Fazendo</h1>
+          </div>
+          <div class="column">
+            <h1>Feito</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
