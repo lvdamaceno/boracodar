@@ -6,6 +6,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   font-size: 62.5%;
   font-family: 'Inter', sans-serif;
@@ -14,6 +18,8 @@
 body {
   font-size: 1.6rem;
   background: #7c3aed;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .active {
@@ -25,6 +31,7 @@ body {
   gap: 2.7rem;
   height: 100vh;
   width: 100vw;
+  /* overflow: hidden; */
 }
 
 /* MENU */
@@ -73,20 +80,25 @@ body {
   align-items: center;
 }
 
+/* PANEL */
+
 #panel {
   background-color: #fbfaff;
   border-radius: 3.2rem 0 0 0;
   margin-top: 0.4rem;
-  width: 100%;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
 }
-
-/* PANEL */
 
 #panel #header {
   display: flex;
   justify-content: space-between;
   margin: 5.2rem 3.2rem 0 3.2rem;
+}
+
+#panel #header i {
+  cursor: pointer;
 }
 
 #panel #title {
@@ -182,11 +194,14 @@ i.ph-magnifying-glass {
   margin: 3.2rem 3.2rem 0 3.2rem;
   display: grid;
   gap: 4.8rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: max-content max-content max-content max-content;
+  /* height: 100vh; */
+  overflow-x: scroll;
 }
-
+/* 
 .column {
-}
+  height: 100vh;
+} */
 
 #columns .column h1 {
   font-weight: 700;
@@ -200,7 +215,8 @@ i.ph-magnifying-glass {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  /* overflow-y: scroll; */
+  padding-bottom: 3.2rem;
+  /* height: 100vh; */
 }
 
 .card {
@@ -250,4 +266,65 @@ i.ph-magnifying-glass {
   line-height: 130%;
   color: #7c3aed;
   text-align: center;
+}
+
+#new {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #7c3aed;
+  box-shadow: 0px 4px 16px #eae2fd;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+#new i {
+  font-size: 3.4rem;
+  color: #fff;
+}
+
+@media (max-width: 40rem) {
+  #menu {
+    /* margin: 14.5rem 0 0 3.5rem; */
+    margin: 0;
+    margin-right: -16rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #menu #logo {
+    opacity: 0;
+  }
+
+  #menu-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 700;
+    color: #cab3ff;
+  }
+
+  #menu-itens i {
+    font-size: 2.5rem;
+  }
+
+  #search {
+    margin: 2.2rem 2.2rem 0 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  #columns {
+    margin: 1rem 1rem 0 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: max-content max-content max-content;
+    /* height: 100vh; */
+    overflow-x: scroll;
+  }
 }
