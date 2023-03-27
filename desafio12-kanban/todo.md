@@ -4,7 +4,7 @@ Kanban
 
 ### TODO
 
-- [ ] Ativar Scroll horizontal no painel
-- [ ] Ativar Scroll vertical nas colunas
-- [ ] Layout mobile
-- [ ] No ícone de edição do cabeçalho do board colocar um `cursor: pointer`
+- [x] Ativar Scroll horizontal no painel
+- [x] Ativar Scroll vertical nas colunas
+- [x] Layout mobile
+- [x] No ícone de edição do cabeçalho do board colocar um `cursor: pointer`
