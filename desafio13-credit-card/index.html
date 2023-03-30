@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit Card</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="card" class="flex column">
+        <div class="top flex">
+          <img src="./assets/visa.svg" alt="" />
+          <img src="./assets/contacless.svg" alt="" />
+        </div>
+        <div class="number flex">
+          <span>4716 8039 02** ****</span>
+        </div>
+        <div class="name flex">
+          <p>Seu nome aqui</p>
+          <p>**/**</p>
+        </div>
+      </div>
+      <div id="form">
+        <form action="">
+          <label for="cardNumber">Número do cartão</label><br />
+          <input
+            type="text"
+            id="cardNumber"
+            name="cardNumber"
+            placeholder="Número como está no cartão"
+          /><br />
+
+          <label for="cardName">Nome do titular</label><br />
+          <input
+            type="text"
+            id="cardName"
+            name="cardName"
+            placeholder="Nome como está no cartão"
+          /><br />
+
+          <div class="flex" id="bottom">
+            <div class="flex column">
+              <label for="expirationDate">Validade</label>
+              <input
+                type="text"
+                id="expirationDate"
+                name="expirationDate"
+                placeholder="mm/aa"
+              />
+            </div>
+
+            <div class="flex column">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="***" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="shield">
+        <img src="./assets/ShieldCheck.svg" alt="" />
+        <p>Seus dados estão seguros</p>
+      </div>
+      <div id="button">
+        <button>Adicionar cartão</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

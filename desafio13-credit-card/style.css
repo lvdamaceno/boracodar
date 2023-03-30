@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #1f2937;
+}
+
+/* input,
+button {
+  all: unset;
+  box-sizing: border-box;
+} */
+
+form {
+  margin: auto;
+  width: 90%;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  height: 48px;
+
+  margin-top: 0.4rem;
+  margin-bottom: 2.4rem;
+  background: #111827;
+  border: 1.5px solid #9333ea;
+  border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f3f4f6;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ca3af;
+}
+
+label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e5e7eb;
+}
+
+button {
+  padding: 16px 48px;
+  gap: 8px;
+  border: 0;
+  background: #9333ea;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 327px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+#app {
+  width: 100vw;
+  margin: auto;
+}
+
+#card {
+  margin: 3.2rem auto 4.8rem;
+  width: 28rem;
+  height: 16.8rem;
+  border: 1px solid #374151;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+  background-image: url(./assets/bg-card-front.png);
+}
+
+#card .top {
+  width: 23.2rem;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#card .number {
+  width: 23.2rem;
+  margin: auto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  color: #f9fafb;
+}
+
+#card .name {
+  width: 23.2rem;
+  margin: auto;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #f9fafb;
+  opacity: 0.5;
+}
+
+#shield {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e5e7eb;
+}
+
+#bottom {
+  gap: 1.6rem;
+}
+
+#button {
+  margin-top: 4rem;
+  display: grid;
+  justify-content: center;
+  padding: 2.4rem;
+}
+
+@media (min-width: 40rem) {
+  body {
+    background-color: #111827;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  button {
+    width: 67.2rem;
+  }
+  form {
+    width: 50%;
+  }
+  #app {
+    background: #1f2937;
+    /* neutral colors/gray-700 */
+    border: 1px solid #374151;
+    border-radius: 8px;
+    width: 73.8rem;
+    /* padding: 3.2rem; */
+    display: grid;
+  }
+}
