@@ -155,19 +155,44 @@ button {
     justify-content: center;
     height: 100vh;
   }
+
+  #button {
+    grid-area: button;
+    width: 100%;
+    margin-top: 0;
+  }
   button {
     width: 67.2rem;
   }
+
   form {
-    width: 50%;
+    grid-area: form;
+    margin: 0;
   }
+
   #app {
     background: #1f2937;
-    /* neutral colors/gray-700 */
     border: 1px solid #374151;
     border-radius: 8px;
     width: 73.8rem;
-    /* padding: 3.2rem; */
+    padding: 3.2rem;
     display: grid;
+    grid-template-areas:
+      'form card'
+      'form shield'
+      'button button';
+    grid-template-columns: 50% 50%;
+  }
+
+  #card {
+    grid-area: card;
+    margin-top: 1.6rem;
+    margin-right: 0;
+  }
+
+  #shield {
+    grid-area: shield;
+    margin-top: -12rem;
+    margin-right: -5.5rem;
   }
 }
