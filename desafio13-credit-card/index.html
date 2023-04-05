@@ -23,11 +23,11 @@
           <img src="./assets/contacless.svg" alt="" />
         </div>
         <div class="number flex">
-          <span>4716 8039 02** ****</span>
+          <span id="cardNumber">4716 8039 02** ****</span>
         </div>
         <div class="name flex">
-          <p>Seu nome aqui</p>
-          <p>**/**</p>
+          <p id="cardName">Seu nome aqui</p>
+          <p id="cardExpirationDate">**/**</p>
         </div>
       </div>
       <div id="form">
@@ -38,6 +38,7 @@
             id="cardNumber"
             name="cardNumber"
             placeholder="Número como está no cartão"
+            onkeyup="getCardNumberFromInput(this)"
           /><br />
 
           <label for="cardName">Nome do titular</label><br />
@@ -46,6 +47,7 @@
             id="cardName"
             name="cardName"
             placeholder="Nome como está no cartão"
+            onkeyup="getCardNameFromInput(this)"
           /><br />
 
           <div class="flex" id="bottom">
@@ -56,6 +58,7 @@
                 id="expirationDate"
                 name="expirationDate"
                 placeholder="mm/aa"
+                onkeyup="getCardExpirationDateFromInput(this)"
               />
             </div>
 
