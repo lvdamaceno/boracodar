@@ -20,7 +20,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td>Upload</td>
         <td>05/04/2023</td>
         <td><a href="desafio14-upload">🔗</a></td>
-        <td><a href="https://lvdamaceno.github.io/boracodar/desafio1upload/index.html">🌎</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio14-upload/index.html">🌎</a></td>
       </tr>
     <tr>
         <td>13</td>
