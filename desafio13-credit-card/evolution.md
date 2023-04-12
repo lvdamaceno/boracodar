@@ -1,0 +1,4 @@
+- Animação de flip no cartão com css
+- Máscara nos campos com JS
+- Quando algo é digitado nos inputs ao mesmo tempo é mostrado no seu respectivo dentro do cartão usando JS
+- Alerta quando campo é preenchido de forma errada

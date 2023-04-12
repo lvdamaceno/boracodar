@@ -23,35 +23,44 @@
           <img src="./assets/contacless.svg" alt="" />
         </div>
         <div class="number flex">
-          <span id="cardNumber">4716 8039 02** ****</span>
+          <p id="detailCardNumber">4716 8039 02** ****</p>
         </div>
         <div class="name flex">
           <p id="cardName">Seu nome aqui</p>
-          <p id="cardExpirationDate">**/**</p>
+          <p id="detailCardExpirationDate">**/**</p>
         </div>
       </div>
       <div id="form">
-        <form action="">
-          <label for="cardNumber">Número do cartão</label><br />
-          <input
-            type="text"
-            id="cardNumber"
-            name="cardNumber"
-            placeholder="Número como está no cartão"
-            onkeyup="getCardNumberFromInput(this)"
-          /><br />
+        <form action="" id="my-form">
+          <div class="input-wrapper">
+            <label for="cardNumber">Número do cartão</label><br />
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="Número como está no cartão"
+              onkeyup="getCardNumberFromInput(this)"
+            />
+          </div>
 
-          <label for="cardName">Nome do titular</label><br />
-          <input
-            type="text"
-            id="cardName"
-            name="cardName"
-            placeholder="Nome como está no cartão"
-            onkeyup="getCardNameFromInput(this)"
-          /><br />
+          <div class="input-wrapper">
+            <label for="cardName">Nome do titular</label><br />
+            <input
+              type="text"
+              id="cardName"
+              name="cardName"
+              placeholder="Nome como está no cartão"
+              onkeyup="getCardNameFromInput(this)"
+              required
+            />
+            <div class="warning">
+              <img src="./assets/warning.svg" alt="" />
+              Nome do titular é obrigatório
+            </div>
+          </div>
 
           <div class="flex" id="bottom">
-            <div class="flex column">
+            <div class="column input-wrapper">
               <label for="expirationDate">Validade</label>
               <input
                 type="text"
@@ -62,7 +71,7 @@
               />
             </div>
 
-            <div class="flex column">
+            <div class="column input-wrapper">
               <label for="cvv">CVV</label>
               <input type="text" id="cvv" name="cvv" placeholder="***" />
             </div>
@@ -74,9 +83,10 @@
         <p>Seus dados estão seguros</p>
       </div>
       <div id="button">
-        <button>Adicionar cartão</button>
+        <button type="submit" form="my-form">Adicionar cartão</button>
       </div>
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="./script.js"></script>
   </body>
 </html>

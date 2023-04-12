@@ -1,14 +1,37 @@
 function getCardNumberFromInput(number) {
-  console.log(number.value)
-  document.getElementById('cardNumber').innerText = number.value
+  document.getElementById('detailCardNumber').innerText = number.value
 }
 
 function getCardNameFromInput(name) {
-  console.log(name.value)
   document.getElementById('cardName').innerText = name.value
 }
 
 function getCardExpirationDateFromInput(expdate) {
-  console.log(expdate.value)
-  document.getElementById('cardExpirationDate').innerText = expdate.value
+  document.getElementById('detailCardExpirationDate').innerText = expdate.value
 }
+
+// MASKS
+IMask(document.querySelector('#cvv'), {
+  mask: '0000'
+})
+
+IMask(document.querySelector('#cardNumber'), {
+  mask: '0000 0000 0000 0000'
+})
+
+IMask(document.querySelector('#expirationDate'), {
+  mask: 'MM{/}YY',
+  blocks: {
+    MM: {
+      mask: IMask.MaskedRange,
+      from: 1,
+      to: 12,
+    },
+    YY: {
+      mask: IMask.MaskedRange,
+      from: String(new Date().getFullYear()).slice(2),
+      to: String(new Date().getFullYear() + 10).slice(2),
+    }
+  }
+
+})
