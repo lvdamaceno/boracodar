@@ -2,6 +2,10 @@ function getCardNumberFromInput(number) {
   document.getElementById('detailCardNumber').innerText = number.value
 }
 
+function getCardCvvFromInput(cvv) {
+  document.getElementById('white-box').innerText = cvv.value
+}
+
 function getCardNameFromInput(name) {
   document.getElementById('cardName').innerText = name.value
 }

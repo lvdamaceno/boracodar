@@ -17,19 +17,31 @@
   </head>
   <body>
     <div id="app">
-      <div id="card" class="flex column">
-        <div class="top flex">
-          <img src="./assets/visa.svg" alt="" />
-          <img src="./assets/contacless.svg" alt="" />
+      <div id="credit-card">
+        <div id="card" class="flex column">
+          <div class="top flex">
+            <img src="./assets/visa.svg" alt="" />
+            <img src="./assets/contacless.svg" alt="" />
+          </div>
+          <div class="number flex">
+            <p id="detailCardNumber">4716 8039 02** ****</p>
+          </div>
+          <div class="name flex">
+            <p id="cardName">Seu nome aqui</p>
+            <p id="detailCardExpirationDate">**/**</p>
+          </div>
         </div>
-        <div class="number flex">
-          <p id="detailCardNumber">4716 8039 02** ****</p>
-        </div>
-        <div class="name flex">
-          <p id="cardName">Seu nome aqui</p>
-          <p id="detailCardExpirationDate">**/**</p>
+        <div id="back">
+          <div class="cvv">
+            <span id="black-box"></span>
+            <div class="wrapper flex">
+              <span id="white-box"></span>
+              <p>CVV</p>
+            </div>
+          </div>
         </div>
       </div>
+
       <div id="form">
         <form action="" id="my-form">
           <div class="input-wrapper">
@@ -73,7 +85,13 @@
 
             <div class="column input-wrapper">
               <label for="cvv">CVV</label>
-              <input type="text" id="cvv" name="cvv" placeholder="***" />
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="***"
+                onkeyup="getCardCvvFromInput(this)"
+              />
             </div>
           </div>
         </form>

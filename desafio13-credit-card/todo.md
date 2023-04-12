@@ -2,12 +2,11 @@
 
 Uma página de cadastro de cartão de crédito
 
-### Column Name
-
-- [ ] Animar o cartão para virar ao ser clicado
+### ToDo
 
 ### Completed Column ✓
 
+- [x] Animar o cartão para virar ao ser clicado
 - [x] Configurar o estado dos componentes
 - [x] Corrigir os números do cartão
 - [x] Preencher o cartão com os dados que forem informados no form

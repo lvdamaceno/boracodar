@@ -117,14 +117,49 @@ button:hover {
   margin: auto;
 }
 
-#card {
+#credit-card {
   margin: 3.2rem auto 4.8rem;
   width: 28rem;
   height: 16.8rem;
+  perspective: 60rem;
+}
+
+#credit-card > div {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+#credit-card:active #card,
+#credit-card:hover #card {
+  transform: rotateY(180deg);
+}
+
+#credit-card:active #back,
+#credit-card:hover #back {
+  transform: rotateY(0);
+}
+
+#card {
   border: 0.1rem solid #374151;
   box-shadow: 0rem 0.4rem 2.4rem rgba(0, 0, 0, 0.25);
   border-radius: 1.6rem;
-  background-image: url(./assets/bg-card-front.png);
+  background: url(./assets/bg-card-front.png) no-repeat;
+  transform: rotateY(0);
+}
+
+#back {
+  border: 0.1rem solid #374151;
+  box-shadow: 0rem 0.4rem 2.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+  background: url(./assets/bg-card-back.png) no-repeat;
+  transform: rotateY(-180deg);
 }
 
 #card .top {
@@ -155,6 +190,52 @@ button:hover {
   color: #f9fafb;
   opacity: 0.5;
   text-transform: capitalize;
+}
+
+#back .wrapper {
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem auto;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e5e7eb;
+}
+
+#back span#black-box {
+  width: 100%;
+  height: 32px;
+  background: black;
+  margin-top: 1.6rem;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0.5rem;
+}
+
+#back span#white-box {
+  width: 201px;
+  height: 32px;
+  background: #d1d5db;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0.5rem;
 }
 
 #shield {
@@ -216,14 +297,14 @@ button:hover {
     padding: 3.2rem;
     display: grid;
     grid-template-areas:
-      'form card'
+      'form credit-card'
       'form shield'
       'button button';
     grid-template-columns: 50% 50%;
   }
 
-  #card {
-    grid-area: card;
+  #credit-card {
+    grid-area: credit-card;
     margin-top: 1.6rem;
     margin-right: 0;
   }
