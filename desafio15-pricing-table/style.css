@@ -52,6 +52,7 @@ button {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -80,6 +81,8 @@ button:hover {
 
 .pricing-wrapper:hover {
   border: 1px solid #996dff;
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
 }
 
 .price {
@@ -159,11 +162,20 @@ span#flag {
   color: #0f172a;
 }
 
+.bounce-5 {
+  animation-name: bounce-5;
+  animation-timing-function: ease;
+}
+
 @media (min-width: 40rem) {
   body {
     display: flex;
     height: 100vh;
     align-items: center;
+  }
+
+  h1 {
+    font-size: 3.2rem;
   }
 
   button {
@@ -178,7 +190,24 @@ span#flag {
   }
 
   .pricing-wrapper {
-    width: 32rem;
+    width: 34.8rem;
     height: 40rem;
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }

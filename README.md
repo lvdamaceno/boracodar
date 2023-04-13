@@ -16,6 +16,13 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>15</td>
+        <td>Pricing Table</td>
+        <td>12/04/2023</td>
+        <td><a href="desafio15-pricing-table">🔗</a></td>
+        <td><a href="https://lvdamaceno.github.io/boracodar/desafio15-pricing-table/index.html">🌎</a></td>
+      </tr>
+    <tr>
         <td>14</td>
         <td>Upload</td>
         <td>05/04/2023</td>
