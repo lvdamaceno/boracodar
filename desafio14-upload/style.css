@@ -56,6 +56,18 @@ h2 {
   border: 0.1rem dashed #c1b2fa;
   border-radius: 0.8rem;
   padding: 2.8rem 0 3.2rem 0;
+  position: relative;
+}
+
+#upload input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+#upload.dragover {
+  background: #ebe6ff;
 }
 
 #upload p {
