@@ -41,6 +41,14 @@ p {
   font-size: 1.2rem;
   line-height: 1.4rem;
   color: #8c8cba;
+}
+
+a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #8c8cba;
   text-decoration: none;
 }
 
