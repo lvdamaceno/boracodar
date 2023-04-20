@@ -140,6 +140,7 @@ img {
 
 .contact {
   gap: 5.2rem;
+  align-items: center;
 }
 
 .person {
