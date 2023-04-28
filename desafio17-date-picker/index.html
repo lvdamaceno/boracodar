@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Date Picker</title>
+  </head>
+  <body class="grid">
+    <div class="app">
+      <div class="calendar year-month">
+        <div class="header flex">
+          <i class="ph-bold ph-caret-left"></i>
+          <h1>2023</h1>
+          <i class="ph-bold ph-caret-right"></i>
+        </div>
+        <div class="months grid">
+          <span class="month">Jan</span>
+          <span class="month">Fev</span>
+          <span class="month">Mar</span>
+          <span class="month" id="selected">Abr</span>
+          <span class="month">Mai</span>
+          <span class="month">Jun</span>
+          <span class="month">Jul</span>
+          <span class="month">Ago</span>
+          <span class="month">Set</span>
+          <span class="month">Out</span>
+          <span class="month">Nov</span>
+          <span class="month">Dez</span>
+        </div>
+      </div>
+      <div class="calendar month-days">
+        <div class="header flex">
+          <i class="ph-bold ph-caret-left"></i>
+          <h1>Abril 2023</h1>
+          <i class="ph-bold ph-caret-right"></i>
+        </div>
+        <div class="week-days grid">
+          <span>Dom</span>
+          <span>Seg</span>
+          <span>Ter</span>
+          <span>Qua</span>
+          <span>Qui</span>
+          <span>Sex</span>
+          <span>Sab</span>
+        </div>
+        <div class="days grid">
+          <span class="day" id="not-current-month">26</span>
+          <span class="day" id="not-current-month">27</span>
+          <span class="day" id="not-current-month">28</span>
+          <span class="day" id="not-current-month">29</span>
+          <span class="day" id="not-current-month">30</span>
+          <span class="day" id="not-current-month">31</span>
+          <span class="day">1</span>
+          <span class="day">2</span>
+          <span class="day">3</span>
+          <span class="day">4</span>
+          <span class="day">5</span>
+          <span class="day">6</span>
+          <span class="day">7</span>
+          <span class="day">8</span>
+          <span class="day">9</span>
+          <span class="day">10</span>
+          <span class="day">11</span>
+          <span class="day">12</span>
+          <span class="day">13</span>
+          <span class="day">14</span>
+          <span class="day">15</span>
+          <span class="day">16</span>
+          <span class="day">17</span>
+          <span class="day">18</span>
+          <span class="day">19</span>
+          <span class="day">20</span>
+          <span class="day">21</span>
+          <span class="day">22</span>
+          <span class="day">23</span>
+          <span class="day">24</span>
+          <span class="day">25</span>
+          <span class="day">26</span>
+          <span class="day">27</span>
+          <span class="day">28</span>
+          <span class="day">29</span>
+          <span class="day">30</span>
+          <span class="day" id="not-current-month">1</span>
+          <span class="day" id="not-current-month">2</span>
+          <span class="day" id="not-current-month">3</span>
+          <span class="day" id="not-current-month">4</span>
+          <span class="day" id="not-current-month">5</span>
+          <span class="day" id="not-current-month">6</span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

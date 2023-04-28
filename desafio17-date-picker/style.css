@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+#selected {
+  background: #6200ee;
+  color: #fff;
+}
+
+#not-current-month {
+  opacity: 0.5;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f5f5f5;
+  height: 100vh;
+  place-content: center;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+
+i {
+  color: #666666;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i:hover {
+  background: #ece0fd;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  position: relative;
+}
+
+.calendar {
+  width: 34.4rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border-radius: 1.6rem;
+}
+
+.year-month {
+  padding: 3.2rem;
+  display: grid;
+  gap: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.months {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+span.month {
+  padding: 1.2rem 2.6rem;
+  border-radius: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #666666;
+  text-align: center;
+}
+
+span.month:hover {
+  background: #ece0fd;
+}
+
+/* days of the month calendar */
+
+.month-days {
+  padding: 3.2rem;
+  display: grid;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+.week-days {
+  margin-top: 2.4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.week-days span {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+span.day {
+  height: 4rem;
+  width: 4rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #666666;
+  text-align: center;
+}
+
+span.day:hover {
+  background: #ece0fd;
+}
