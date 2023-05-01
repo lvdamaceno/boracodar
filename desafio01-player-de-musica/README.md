@@ -12,6 +12,7 @@
 
 <br>
 
+<p align="center">Projeto de um player de música, apresenta a capa do disco, nome da música, nome da banca e o tempo de reprodução.</p>
 <p align="center">
   <img src="../assets/img/desafio01-player-de-musica.png" width="100%">
   <a href="https://lvdamaceno.github.io/boracodar/desafio01-player-de-musica/index.html">Acesse o projeto</a>
