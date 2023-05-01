@@ -54,7 +54,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <td><a href="desafio16-pagina-contatos">Contacts Page</a></td>
         <td>19/04/2023</td>
         <td align="center">
-        <a href="desafio16-pagina-contatos"><img width="300px" src="https://lvdamaceno.github.io/boracodar/desafio16-pagina-contatos/index.html" /></a></td>
+        <a href="https://lvdamaceno.github.io/boracodar/desafio16-pagina-contatos/index.html"><img width="300px" src="assets/img/desafio16-contacts-page.png" /></a></td>
     </tr>
     <tr>
         <td>15</td>
