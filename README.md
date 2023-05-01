@@ -5,7 +5,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
 [Acesse os desafios clicando aqui](https://lvdamaceno.github.io/boracodar/)
 
 <table>
-    <thead>
+    <!-- <thead>
       <tr>
         <th>#</th>
         <th>name</th>
@@ -13,8 +13,49 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
         <th>code</th>
         <th>live</th>
       </tr>
+    </thead> -->
+    <thead>
+        <tr>
+            <th align="center">
+                <img width="20" height="1"> 
+                <p>
+                    <small>#</small>
+                </p>
+            </th>
+            <th align="center">
+                <img width="150" height="1"> 
+                <p> 
+                    <small>
+                        NAME
+                    </small>
+                </p>
+            </th>
+            <th align="left">
+                <img width="100" height="1">
+                <p align="left"> 
+                    <small>
+                    RELEASE DATE
+                    </small>
+                </p>
+            </th>
+            <th align="center">
+                <img width="201" height="1">
+                <p align="center"> 
+                    <small>
+                    PREVIEW
+                    </small>
+                </p>
+            </th>
+        </tr>
     </thead>
     <tbody>
+    <tr>
+        <td>16</td>
+        <td><a href="16">Contacts Page</a></td>
+        <td>19/04/2023</td>
+        <td align="center">
+        <a href="desafio16-pagina-contatos"><img width="300px" src="./assets/img/desafio16-contacts-page.png" /></a></td>
+    </tr>
     <tr>
         <td>15</td>
         <td>Pricing Table</td>
