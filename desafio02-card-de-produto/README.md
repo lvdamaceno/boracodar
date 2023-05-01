@@ -12,8 +12,7 @@
 
 <br>
 
-<p aling="center">Projeto de card de venda de produto, mostra a imagem do produto e sua descrição e preço.
-</p>
+<p align="center">Projeto de card de venda de produto, mostra a imagem do produto e sua descrição e preço.</p>
 <p align="center"> 
   <img src="../assets/img/desafio02-card-de-produto.png" width="100%">
   <a href="https://lvdamaceno.github.io/boracodar/desafio02-card-de-produto/index.html">Acesse o projeto</a>
