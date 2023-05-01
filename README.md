@@ -41,6 +41,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>17</td>
+        <td><a href="desafio17-date-picker">Contacts Page</a></td>
+        <td>--</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio17-date-picker/index.html">
+        <img width="300px" src="assets/img/desafio17-date-picker.png"/></a></td>
+    </tr>
+    <tr>
         <td>16</td>
         <td><a href="desafio16-pagina-contatos">Contacts Page</a></td>
         <td>19/04/2023</td>
