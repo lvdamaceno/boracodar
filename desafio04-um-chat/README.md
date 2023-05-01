@@ -1,34 +1,47 @@
-# Um Chat
+<h1 align="center"> Um Chat </h1>
 
-Desafio `04` do [#boraCodar](https://boracodar.dev/) 
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-Tema: Desenvolver um chat mobile/desktop.
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
 <br>
 
-<div align="center">
-  <h2><a href="https://boracodar-pi.vercel.app/">Acesse o projeto</a></h2> 
-</div>
-
-<p align="center">
-  <img alt="gif do projeto" src="https://user-images.githubusercontent.com/7557802/215238279-bf03c79d-04e2-4fc5-b09c-92418d47be6b.gif">
+<p align="center">Projeto de um chat, apresenta no cabeçalho as informações do usuário, abaixo a área das mensagens e um input para envio.</p>
+<p align="center"> 
+  <img src="../assets/img/desafio04-um-chat.png" width="100%">
+  <a href="https://lvdamaceno.github.io/boracodar/desafio04-um-chat/index.html">Acesse o projeto</a>
 </p>
-
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- HTML e CSS
+- Javascript
+- Phosphoricons
+- Git e Github
 - Figma
-- HTML
-- CSS
-- JavaScript
-- Git
 
-<p align="center">
-  <a href="https://choosealicense.com/licenses/mit/"><img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"></a>
-</p>
+## 📐 Design
+
+- Mobile
+- Desktop
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/QYfXHTpUqlaLAKx9GTp23p/%23boraCodar---Desafio-4-(Community)?t=rmR9vBCQgACsAdIZ-6>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT.
 
 ---
 
-by [@lvdamaceno](https://www.linkedin.com/in/viniciusdamaceno/) :wave: 
+By Vinícius Damaceno :wave: [Entre em contato](https://about.lvdamaceno.dev)

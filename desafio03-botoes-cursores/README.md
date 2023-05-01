@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/myRa8QUX52JBTEYJ4TwDs7/%23boraCodar---Desafio-2-(Copy)?t=rmR9vBCQgACsAdIZ-6>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/zcLXV9xZHiCXZxsNn4tHcu/%23boraCodar---Desafio-3-(Community)?t=rmR9vBCQgACsAdIZ-6>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
