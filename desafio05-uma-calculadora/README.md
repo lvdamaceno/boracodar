@@ -1,34 +1,45 @@
-# Uma calculadora
+<h1 align="center"> Uma calculadora </h1>
 
-Desafio `05` do [#boraCodar](https://boracodar.dev/)
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Design</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-Tema: Desenvolver uma calculadora.
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
 <br>
 
-<div align="center">
-  <h2><a href="">Acesse o projeto</a></h2> 
-</div>
-
-<p align="center">
-  <img alt="imagem do projeto" src="https://user-images.githubusercontent.com/7557802/216215064-e9d992da-05cc-43e6-b104-7c7c3d65b8d6.png">
+<p align="center">Projeto de uma calculadora.</p>
+<p align="center"> 
+  <img src="../assets/img/desafio05-uma-calculdora.png" width="100%">
+  <a href="https://lvdamaceno.github.io/boracodar/desafio05-uma-calculadora/index.html">Acesse o projeto</a>
 </p>
-
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- HTML e CSS
+- Git e Github
 - Figma
-- HTML
-- CSS
-- JavaScript
-- Git
 
-<p align="center">
-  <a href="https://choosealicense.com/licenses/mit/"><img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"></a>
-</p>
+## 📐 Design
+
+- Mobile
+- Desktop
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/FZHoK7viNqtPbbBgaXYpvo/%23boraCodar---Desafio-5-(Community)?t=rmR9vBCQgACsAdIZ-6>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT.
 
 ---
 
-by [@lvdamaceno](https://www.linkedin.com/in/viniciusdamaceno/) :wave:
+By Vinícius Damaceno :wave: [Entre em contato](https://about.lvdamaceno.dev)
