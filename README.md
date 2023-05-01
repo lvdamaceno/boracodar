@@ -26,7 +26,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
                 <img width="150" height="1"> 
                 <p> 
                     <small>
-                        NAME
+                        CODE
                     </small>
                 </p>
             </th>
@@ -51,10 +51,10 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     <tbody>
     <tr>
         <td>16</td>
-        <td><a href="16">Contacts Page</a></td>
+        <td><a href="desafio16-pagina-contatos">Contacts Page</a></td>
         <td>19/04/2023</td>
         <td align="center">
-        <a href="desafio16-pagina-contatos"><img width="300px" src="./assets/img/desafio16-contacts-page.png" /></a></td>
+        <a href="desafio16-pagina-contatos"><img width="300px" src="https://lvdamaceno.github.io/boracodar/desafio16-pagina-contatos/index.html" /></a></td>
     </tr>
     <tr>
         <td>15</td>
