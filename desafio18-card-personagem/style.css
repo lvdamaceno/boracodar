@@ -8,14 +8,103 @@
 
 :root {
   font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
   font-size: 1.6rem;
+  background: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
 }
 
-input,
-button {
-  all: unset; /* remove all default styles */
-  box-sizing: border-box;
+h1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ece4ef;
+  text-shadow: 0rem 0rem 0.8rem rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #9c83a7;
+}
+
+.app {
+  width: 436px;
+  height: 608px;
+}
+
+/* card */
+.card {
+  display: grid;
+  gap: 6rem;
+  padding: 4.8rem 4rem;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03),
+    0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17),
+    0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    90.24deg,
+    rgba(14, 23, 101, 0.85) 0%,
+    rgba(53, 14, 88, 0.85) 98.1%
+  );
+}
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -5rem;
+  right: -11.5rem;
+
+  background: url(./assets/rey.png) no-repeat;
+}
+
+/* title */
+.title {
+  display: grid;
+  gap: 1.6rem;
+  width: 26.8rem;
+}
+.title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #d8cede;
+}
+
+/* info */
+.infos {
+  width: 20rem;
+  display: grid;
+  gap: 1.6rem;
+}
+.info {
+  display: grid;
+  gap: 0.2rem;
+}
+.info p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+  color: #d8cede;
 }
