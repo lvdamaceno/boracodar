@@ -41,9 +41,17 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>18</td>
+        <td><a href="desafio18-card-personagem">Character Card</a></td>
+        <td>05/05/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio18-card-personagem/index.html">
+        <img width="300px" src="assets/img/desafio18-card-personagem.png"/></a></td>
+    </tr>
+    <tr>
         <td>17</td>
-        <td><a href="desafio17-date-picker">Contacts Page</a></td>
-        <td>--</td>
+        <td><a href="desafio17-date-picker">Date Picker</a></td>
+        <td>02/05/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio17-date-picker/index.html">
         <img width="300px" src="assets/img/desafio17-date-picker.png"/></a></td>
