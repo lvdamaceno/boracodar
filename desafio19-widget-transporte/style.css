@@ -8,8 +8,174 @@
 
 :root {
   font-size: 62.5%;
+  font-family: 'Inter';
 }
 
 body {
+  height: 100vh;
+
   font-size: 1.6rem;
+  background-color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: #fff;
+  border-radius: 4rem;
+
+  padding: 2.4rem 5.6rem;
+  width: fit-content;
+
+  display: grid;
+  gap: 9.9rem;
+}
+
+/* top */
+.top {
+  margin: auto;
+  width: 168px;
+  height: 17px;
+  background: #e5d8ea;
+  border-radius: 999px;
+}
+/* location */
+
+.location h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #372d3b;
+}
+
+.location p {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #372d3b;
+}
+
+.location span {
+  color: #864293;
+}
+
+/* vehicle */
+.vehicle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle .driver {
+  position: relative;
+}
+
+.vehicle .driver .driver-info {
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+}
+
+.vehicle .driver .driver-info img {
+  border-radius: 50%;
+}
+
+.vehicle .driver .driver-info .rating {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3.1rem;
+  gap: 1.9rem;
+  background: #372d3b;
+  border-radius: 1.5rem;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  color: #fbf8fc;
+}
+
+.vehicle .driver .driver-info .driver-name {
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #372d3b;
+}
+
+.vehicle .driver .vehicle-img {
+  position: absolute;
+  bottom: 0;
+  left: 9rem;
+  z-index: 1;
+}
+
+.vehicle .plate {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.vehicle .plate h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.1rem;
+  line-height: 5rem;
+  color: #372d3b;
+}
+
+.vehicle .plate p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #372d3b;
+}
+
+/* message */
+.message {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: space-between;
+}
+.message input {
+  border: none;
+  background: #f5edf7;
+  border-radius: 24px;
+  height: 6.4rem;
+  flex: 1;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #372d3b;
+
+  padding-left: 3rem;
+}
+
+.message input::placeholder {
+  font-size: 24px;
+  line-height: 29px;
+  color: #372d3b;
+}
+
+.message .icons {
+  display: flex;
+  align-items: center;
+  /* width: fit-content; */
+  gap: 2rem;
+}
+
+.message i {
+  font-size: 4.8rem;
+  color: #372d3b;
 }

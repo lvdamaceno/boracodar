@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Widget de Transporte</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="top"></div>
+      <div class="location">
+        <h1>Encontre <span>Boris</span> no local de partida</h1>
+        <p>Chega em 3 minutos (800 metros)</p>
+      </div>
+      <div class="vehicle">
+        <div class="driver">
+          <div class="driver-info">
+            <img src="./assets/boris.png" alt="" />
+            <div class="rating">
+              <i class="ph-fill ph-star"></i>
+              <p>5.0</p>
+            </div>
+            <div class="driver-name">
+              <p>Boris C.</p>
+            </div>
+          </div>
+          <div class="vehicle-img">
+            <img src="./assets/car.png" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="plate">
+          <h1>BCD0D19</h1>
+          <p>Honda Civic Roxo</p>
+        </div>
+      </div>
+      <div class="message">
+        <input type="text" placeholder="Enviar mensagem para Boris..." />
+        <div class="icons">
+          <i class="ph-fill ph-phone"></i>
+          <i class="ph-fill ph-shield-plus"></i>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
