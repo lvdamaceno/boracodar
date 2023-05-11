@@ -42,7 +42,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     <tbody>
     <tr>
         <td>19</td>
-        <td><a href="desafio19-widget-transport">Transport Widget</a></td>
+        <td><a href="desafio19-widget-transporte">Transport Widget</a></td>
         <td>10/05/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio19-widget-transporte/index.html">
