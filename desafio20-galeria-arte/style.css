@@ -46,19 +46,6 @@ i {
   font-size: 3.2rem;
 }
 
-.gallery-img {
-  overflow: hidden;
-}
-
-img {
-  transition: 500ms ease-in-out;
-  object-position: center;
-}
-
-img:hover {
-  transform: scale(1.1);
-}
-
 .gallery {
   margin: 14rem 11rem 14rem 0;
   display: flex;
@@ -85,18 +72,29 @@ img:hover {
 .gallery-img.vertical {
   width: 38.4rem;
   height: 60rem;
-  object-fit: cover;
   grid-area: A;
 }
 
 .gallery-img.small {
   width: 38.4rem;
   height: 28.4rem;
-  object-fit: cover;
 }
 
 .horizontal {
   width: 80rem;
   height: 40rem;
+}
+
+.gallery-img {
+  overflow: hidden;
+}
+
+img {
+  transition: 500ms ease-in-out;
+  object-position: center;
   object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
