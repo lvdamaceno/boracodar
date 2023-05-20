@@ -16,12 +16,14 @@ body {
   background-color: #121214;
   background-image: url(./assets/noise.png);
   color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-areas: 'header aside';
   justify-content: center;
   gap: 12rem;
 }
 
 header {
+  grid-area: header;
   font-size: 23px;
   line-height: 60px;
   margin: 14rem 0 0 11rem;
@@ -30,12 +32,35 @@ header {
   height: fit-content;
 }
 
+aside {
+  grid-area: aside;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+aside::-webkit-scrollbar {
+  display: none;
+}
+
 i {
   font-size: 3.2rem;
 }
 
+.gallery-img {
+  overflow: hidden;
+}
+
+img {
+  transition: 500ms ease-in-out;
+  object-position: center;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
 .gallery {
-  margin: 14rem 11rem 0 0;
+  margin: 14rem 11rem 14rem 0;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -57,21 +82,21 @@ i {
     'C A';
 }
 
-.vertical {
+.gallery-img.vertical {
   width: 38.4rem;
   height: 60rem;
   object-fit: cover;
   grid-area: A;
 }
 
-.horizontal {
-  width: 80rem;
-  height: 40rem;
+.gallery-img.small {
+  width: 38.4rem;
+  height: 28.4rem;
   object-fit: cover;
 }
 
-.small {
-  width: 38.4rem;
-  height: 28.4rem;
+.horizontal {
+  width: 80rem;
+  height: 40rem;
   object-fit: cover;
 }
