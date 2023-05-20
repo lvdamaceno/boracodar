@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Hepta Slab', serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #121214;
+  background-image: url(./assets/noise.png);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+}
+
+header {
+  font-size: 23px;
+  line-height: 60px;
+  margin: 14rem 0 0 11rem;
+  display: grid;
+  gap: 3.2rem;
+  height: fit-content;
+}
+
+i {
+  font-size: 3.2rem;
+}
+
+.gallery {
+  margin: 14rem 11rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.left {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-areas:
+    'A B'
+    'A C';
+}
+
+.right {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-areas:
+    'B A'
+    'C A';
+}
+
+.vertical {
+  width: 38.4rem;
+  height: 60rem;
+  object-fit: cover;
+  grid-area: A;
+}
+
+.horizontal {
+  width: 80rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.small {
+  width: 38.4rem;
+  height: 28.4rem;
+  object-fit: cover;
+}
