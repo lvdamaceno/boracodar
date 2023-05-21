@@ -38,7 +38,7 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
@@ -46,16 +46,16 @@ body {
 
 .projects-list #project {
   width: 36rem;
-  height: 32rem;
+  height: 28rem;
   position: relative;
 }
 
 #project img {
   width: 36rem;
-  height: 32rem;
+  height: 28rem;
   border-radius: 1rem;
   position: absolute;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* HOVER CAPTION */
@@ -271,7 +271,7 @@ i {
     height: 10rem;
     border-radius: 1rem;
     position: absolute;
-    object-fit: cover;
+    object-fit: fill;
     margin: 1rem;
   }
 
