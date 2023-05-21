@@ -41,6 +41,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>20</td>
+        <td><a href="desafio20-galeria-arte">Transport Widget</a></td>
+        <td>19/05/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio20-galeria-arte/index.html">
+        <img width="300px" src="assets/img/desafio20-galeria-arte.png"/></a></td>
+    </tr>
+    <tr>
         <td>19</td>
         <td><a href="desafio19-widget-transporte">Transport Widget</a></td>
         <td>10/05/2023</td>
