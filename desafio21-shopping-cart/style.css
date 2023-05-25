@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter';
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: #18181b;
+  display: grid;
+  grid-template-rows: 7.2rem 1fr 22.5rem;
+}
+
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 3.2rem;
+  color: #e4e4e7;
+  border-bottom: 2px #3f3f46 solid;
+}
+
+nav h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+nav span {
+  color: #f9fafb;
+  font-weight: 700;
+}
+nav i {
+  color: #a1a1aa;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 1.6rem;
+}
+
+/* section */
+section {
+  padding: 3.2rem 2rem;
+  font-size: 1.6rem;
+  overflow-y: scroll;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+section .products {
+  display: grid;
+  gap: 4.8rem;
+}
+
+section .product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+section .product-info .product-name {
+  height: 4.8rem;
+  overflow: hidden;
+}
+
+section .product-info .product-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #e4e4e7;
+}
+
+section .product-qtd strong {
+  color: #f3f4f6;
+  margin-inline: 0.5rem;
+}
+
+section .product-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .product-price i {
+  padding: 1.2rem;
+  border: 2px solid #3f3f46;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+  color: #a855f7;
+}
+
+section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e4e4e7;
+}
+
+section .product {
+  display: flex;
+  gap: 2.4rem;
+}
+
+section .product img {
+  width: 104px;
+  height: 104px;
+  border-radius: 8px;
+}
+
+/* footer */
+footer {
+  padding: 3.2rem;
+  color: #e4e4e7;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  height: 22.5rem;
+  border-top: 2px #3f3f46 solid;
+}
+
+footer .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+footer .total span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f9fafb;
+}
+
+footer .cupom {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0.8rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a855f7;
+  margin-bottom: 3.2rem;
+}
+
+footer .cupom i {
+  font-size: 2.4rem;
+}
+
+footer button {
+  border: none;
+  padding: 20px 48px;
+  background: #9333ea;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+}
