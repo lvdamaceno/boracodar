@@ -42,7 +42,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     <tbody>
     <tr>
         <td>21</td>
-        <td><a href="desafio21-shopping-cart">Transport Widget</a></td>
+        <td><a href="desafio21-shopping-cart">Shopping Cart</a></td>
         <td>19/05/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio21-shopping-cart/index.html">
@@ -50,7 +50,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </tr>
     <tr>
         <td>20</td>
-        <td><a href="desafio20-galeria-arte">Transport Widget</a></td>
+        <td><a href="desafio20-galeria-arte">Art Gallery</a></td>
         <td>19/05/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio20-galeria-arte/index.html">
