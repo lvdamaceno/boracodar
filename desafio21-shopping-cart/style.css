@@ -20,6 +20,11 @@ body {
   grid-template-rows: 7.2rem 1fr 22.5rem;
 }
 
+i,
+button {
+  cursor: pointer;
+}
+
 /* nav */
 nav {
   display: flex;
@@ -84,7 +89,7 @@ section .product-info .product-price {
 
 section .product-qtd strong {
   color: #f3f4f6;
-  margin-inline: 0.5rem;
+  margin-inline: 1.2rem;
 }
 
 section .product-price {
@@ -98,6 +103,24 @@ section .product-price i {
   filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
   border-radius: 8px;
   color: #a855f7;
+}
+
+i.ph:hover {
+  border: 2px solid #a855f7;
+}
+
+i.ph.ph-plus {
+  border: 2px solid #a855f7;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+}
+
+i.ph.ph-plus:hover {
+  border: 2px solid #a855f7;
+  background-color: #a855f7;
+  color: white;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
 }
 
 section p {
@@ -166,4 +189,14 @@ footer button {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 100%;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f9fafb;
+}
+
+footer button:hover {
+  background: #a855f7;
+  transition: 300ms ease-in-out;
 }
