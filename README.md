@@ -43,7 +43,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     <tr>
         <td>21</td>
         <td><a href="desafio21-shopping-cart">Shopping Cart</a></td>
-        <td>19/05/2023</td>
+        <td>24/05/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio21-shopping-cart/index.html">
         <img width="300px" src="assets/img/desafio21-shopping-cart.png"/></a></td>
