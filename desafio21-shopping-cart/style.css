@@ -106,7 +106,15 @@ section .product-price i {
 }
 
 i.ph:hover {
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+i.ph.ph-plus:hover,
+i.ph.ph-minus:hover {
   border: 2px solid #a855f7;
+  color: #fff;
 }
 
 i.ph.ph-plus {
@@ -167,10 +175,6 @@ footer .total span {
 }
 
 footer .cupom {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  gap: 0.8rem;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -179,7 +183,37 @@ footer .cupom {
 }
 
 footer .cupom i {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+footer .cupom i:hover,
+footer .cupom input:hover::placeholder {
+  color: #c084fc;
+}
+
+footer .cupom input {
+  all: unset;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e4e4e7;
+  width: 12.5rem;
+}
+
+footer .cupom input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a855f7;
+}
+
+footer .cupom input:focus {
+  content: '';
+  border-bottom: 1px #a855f7 solid;
 }
 
 footer button {
@@ -194,9 +228,12 @@ footer button {
   font-size: 18px;
   line-height: 24px;
   color: #f9fafb;
+
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 footer button:hover {
   background: #a855f7;
-  transition: 300ms ease-in-out;
 }
