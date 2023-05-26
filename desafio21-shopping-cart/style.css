@@ -11,7 +11,7 @@
   font-family: 'Inter';
 }
 
-body {
+.wrapper {
   font-size: 1.6rem;
   height: 100vh;
   width: 100vw;
@@ -242,7 +242,23 @@ footer button:hover {
   background: #a855f7;
 }
 
-@media (max-width: 50rem) {
+@media (min-width: 50rem) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+  }
+  .wrapper {
+    font-size: 1.6rem;
+    height: 80rem;
+    width: 45rem;
+    background-color: #18181b;
+    display: grid;
+    grid-template-rows: 7.2rem 1fr 22.5rem;
+    border-radius: 0 0 0 2rem;
+  }
 }
 
 @keyframes entering {
