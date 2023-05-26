@@ -69,7 +69,7 @@ section .products {
 }
 
 section .product {
-  animation: entering 1000ms ease-in-out var(--delay);
+  animation: entering 500ms ease-in-out var(--delay);
 }
 
 section .product-info {
@@ -240,6 +240,14 @@ footer button {
 
 footer button:hover {
   background: #a855f7;
+}
+
+.collapsable-container #expand {
+  display: none;
+  background-color: transparent;
+}
+.collapsable-container.show #expand {
+  display: block;
 }
 
 @media (min-width: 50rem) {
