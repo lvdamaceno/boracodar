@@ -41,6 +41,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>22</td>
+        <td><a href="desafio22-profile">Profile</a></td>
+        <td>31/05/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio22-profile/index.html">
+        <img width="300px" src="assets/img/desafio22-profile.png"/></a></td>
+    </tr>
+    <tr>
         <td>21</td>
         <td><a href="desafio21-shopping-cart">Shopping Cart</a></td>
         <td>24/05/2023</td>
