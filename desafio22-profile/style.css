@@ -67,7 +67,7 @@ i {
     0rem 0.3rem 0.7rem rgba(30, 30, 30, 0.1),
     0rem 0rem 0rem rgba(30, 30, 30, 0.1);
   border-radius: 1.2rem;
-  padding: 2.4rem;
+  padding: 2.4rem 2.4rem 0 2.4rem;
 }
 
 /* headder */
