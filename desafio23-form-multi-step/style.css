@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --purple-mid: #633bbc;
+  --purple-light: #8257e5;
+
+  --white: #fff;
+  --gray-100: #e1e1e6;
+  --gray-200: #8d8d99;
+  --gray-300: #7c7c8a;
+  --gray-400: #323238;
+
+  --sucess-color: #1d8841;
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+}
+
+input,
+button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.step {
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: 6px;
+  width: 37rem;
+  padding: 2rem;
+}
+
+/* header */
+.step header {
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--gray-200);
+  font-weight: 700;
+}
+
+.step header .formStep {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.step header .formStep span {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step header .formStep.active {
+  color: var(--gray-400);
+}
+
+.step header .formStep.active span {
+  background-color: var(--purple-mid);
+  color: var(--white);
+}
+
+.step header .formStep.done {
+  color: var(--gray-400);
+}
+
+.step header .formStep.done span {
+  background-color: var(--sucess-color);
+  color: var(--white);
+}
+
+/* form */
+.step .wrapper form {
+  flex-direction: column;
+
+  margin-top: 2rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid var(--gray-100);
+
+  gap: 1rem;
+}
+
+.step .wrapper form label {
+  font-weight: 700;
+  color: var(--gray-400);
+}
+
+.step .wrapper form input {
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+  height: 3.5rem;
+  color: var(--gray-200);
+}
+
+.step .wrapper form input::placeholder {
+  color: var(--gray-200);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.step .wrapper form .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step .wrapper form button {
+  margin-top: 1rem;
+  width: 9.8rem;
+
+  border: 0;
+  padding: 1rem 2rem;
+
+  background-color: var(--purple-mid);
+  color: var(--white);
+  border-radius: 6px;
+
+  font-weight: 700;
+
+  transition: all 300ms ease-out;
+  cursor: pointer;
+}
+
+.step .wrapper form button.back {
+  background-color: var(--white);
+  border: 1px solid var(--purple-mid);
+  color: var(--purple-mid);
+}
