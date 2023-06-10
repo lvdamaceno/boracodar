@@ -168,3 +168,32 @@ header .formStep.done span {
   border: 1px solid var(--purple-mid);
   color: var(--purple-mid);
 }
+
+@media (max-width: 45rem) {
+  .container {
+    width: 90%;
+    height: 35rem;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 6px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step {
+    top: 3rem;
+    background-color: transparent;
+  }
+  .buttons {
+    width: 100%;
+  }
+}
