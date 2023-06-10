@@ -68,7 +68,6 @@ body {
 header {
   align-items: center;
   justify-content: space-between;
-
   color: var(--gray-200);
   font-weight: 700;
 }
@@ -139,6 +138,7 @@ header .formStep.done span {
   line-height: 1.5;
 }
 
+/* buttons */
 .container .buttons {
   width: 90%;
   display: flex;

@@ -10,34 +10,30 @@ function currentIndex(listItems) {
   return current
 }
 
-function addRemoveClass(list, current, next, className) {
-  list[current].classList.remove(className)
-  list[next].classList.add(className)
+function addRemoveClass(index, current, next, className) {
+  index[current].classList.remove(className)
+  index[next].classList.add(className)
 }
 
 function next() {
   var current = currentIndex(listSteps)
   limit = listSteps.length - 1
   if (current == limit) {
-    var next = 0
-    addRemoveClass(listSteps, current, next, 'show')
-    addRemoveClass(listHeader, current, next, 'active')
+    addRemoveClass(listSteps, current, 0, 'show')
+    addRemoveClass(listHeader, current, 0, 'active')
   } else {
-    var next = current + 1
-    addRemoveClass(listSteps, current, next, 'show')
-    addRemoveClass(listHeader, current, next, 'active')
+    addRemoveClass(listSteps, current, current + 1, 'show')
+    addRemoveClass(listHeader, current, current + 1, 'active')
   }
 }
 
 function previous() {
   var current = currentIndex(listSteps)
   if (current == 0) {
-    var next = listSteps.length - 1
-    addRemoveClass(listSteps, current, next, 'show')
-    addRemoveClass(listHeader, current, next, 'active')
+    addRemoveClass(listSteps, current, listSteps.length - 1, 'show')
+    addRemoveClass(listHeader, current, listSteps.length - 1, 'active')
   } else {
-    var next = current - 1
-    addRemoveClass(listSteps, current, next, 'show')
-    addRemoveClass(listHeader, current, next, 'active')
+    addRemoveClass(listSteps, current, current - 1, 'show')
+    addRemoveClass(listHeader, current, current - 1, 'active')
   }
 }
