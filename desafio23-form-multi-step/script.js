@@ -1,4 +1,4 @@
-const list = document.querySelectorAll(".step")
+const listSteps = document.querySelectorAll(".step")
 const listHeader = document.querySelectorAll(".formStep")
 
 function currentIndex(listItems) {
@@ -10,44 +10,34 @@ function currentIndex(listItems) {
   return current
 }
 
-
+function addRemoveClass(list, current, next, className) {
+  list[current].classList.remove(className)
+  list[next].classList.add(className)
+}
 
 function next() {
-  current = currentIndex(list)
-  limit = list.length - 1
+  var current = currentIndex(listSteps)
+  limit = listSteps.length - 1
   if (current == limit) {
     var next = 0
-    list[current].classList.remove('show')
-    list[next].classList.add('show')
-    // change header colors
-    listHeader[current].classList.remove('active')
-    listHeader[next].classList.add('active')
-
+    addRemoveClass(listSteps, current, next, 'show')
+    addRemoveClass(listHeader, current, next, 'active')
   } else {
     var next = current + 1
-    list[current].classList.remove('show')
-    list[next].classList.add('show')
-    // change header colors
-    listHeader[current].classList.remove('active')
-    listHeader[next].classList.add('active')
+    addRemoveClass(listSteps, current, next, 'show')
+    addRemoveClass(listHeader, current, next, 'active')
   }
 }
 
 function previous() {
-  current = currentIndex(list)
+  var current = currentIndex(listSteps)
   if (current == 0) {
-    var next = list.length - 1
-    list[current].classList.remove('show')
-    list[next].classList.add('show')
-    // change header colors
-    listHeader[current].classList.remove('active')
-    listHeader[next].classList.add('active')
+    var next = listSteps.length - 1
+    addRemoveClass(listSteps, current, next, 'show')
+    addRemoveClass(listHeader, current, next, 'active')
   } else {
     var next = current - 1
-    list[current].classList.remove('show')
-    list[next].classList.add('show')
-    // change header colors
-    listHeader[current].classList.remove('active')
-    listHeader[next].classList.add('active')
+    addRemoveClass(listSteps, current, next, 'show')
+    addRemoveClass(listHeader, current, next, 'active')
   }
 }
