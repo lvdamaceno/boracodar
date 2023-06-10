@@ -1,4 +1,4 @@
-<h1 align="center"> Galeria de Arte </h1>
+<h1 align="center"> Carrinho de compras </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
