@@ -17,9 +17,9 @@
     <title>Form Multi Step</title>
   </head>
   <body>
-    <div class="step">
+    <div class="container">
       <header class="flex">
-        <div class="formStep flex active">
+        <div class="formStep flex">
           <span>1</span>
           <p>Contato</p>
         </div>
@@ -34,88 +34,49 @@
           <p>Projeto</p>
         </div>
       </header>
-      <div class="wrapper">
-        <form action="" class="flex">
-          <label for="name">Nome</label>
-          <input type="text" placeholder="Como prefere ser chamado" />
-          <label for="phone">Telefone</label>
-          <input type="text" placeholder="Digite seu número de Whatsapp" />
-          <label for="email">E-mail</label>
-          <input type="email" placeholder="Digite seu e-mail" />
-          <div class="buttons">
-            <p></p>
-            <button>CONTINUAR</button>
-          </div>
-        </form>
-      </div>
-    </div>
 
-    <div class="step hide">
-      <header class="flex">
-        <div class="formStep flex done">
-          <span>1</span>
-          <p>Contato</p>
+      <div class="steps">
+        <div class="step show">
+          <form action="" class="flex">
+            <label for="name">Nome</label>
+            <input type="text" placeholder="Como prefere ser chamado" />
+            <label for="phone">Telefone</label>
+            <input type="text" placeholder="Digite seu número de Whatsapp" />
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" />
+          </form>
         </div>
-        <i class="ph ph-caret-right"></i>
-        <div class="formStep flex active">
-          <span>2</span>
-          <p>Empresa</p>
-        </div>
-        <i class="ph ph-caret-right"></i>
-        <div class="formStep flex">
-          <span>3</span>
-          <p>Projeto</p>
-        </div>
-      </header>
-      <div class="wrapper">
-        <form action="" class="flex">
-          <label for="name">Nome da empresa</label>
-          <input type="text" placeholder="Qual é o nome da empresa" />
-          <label for="phone">Número de funcionários</label>
-          <input type="text" placeholder="Digite o número de colaboradores" />
-          <label for="about">Sobre seu negócio</label>
-          <input
-            type="text"
-            placeholder="Fale um pouco sobre seus produtos ou serviços"
-          />
-          <div class="buttons">
-            <button class="back">VOLTAR</button>
-            <button>CONTINUAR</button>
-          </div>
-        </form>
-      </div>
-    </div>
 
-    <div class="step hide">
-      <header class="flex">
-        <div class="formStep flex done">
-          <span>1</span>
-          <p>Contato</p>
+        <div class="step">
+          <form action="" class="flex">
+            <label for="name">Nome da empresa</label>
+            <input type="text" placeholder="Qual é o nome da empresa" />
+            <label for="phone">Número de funcionários</label>
+            <input type="text" placeholder="Digite o número de colaboradores" />
+            <label for="about">Sobre seu negócio</label>
+            <input
+              type="text"
+              placeholder="Fale um pouco sobre seus produtos ou serviços"
+            />
+          </form>
         </div>
-        <i class="ph ph-caret-right"></i>
-        <div class="formStep flex done">
-          <span>2</span>
-          <p>Empresa</p>
+
+        <div class="step">
+          <form action="" class="flex">
+            <label for="about">Sobre seu projeto</label>
+            <input
+              type="text"
+              placeholder="Descreva quais os objetivos desse projeto"
+            />
+          </form>
         </div>
-        <i class="ph ph-caret-right"></i>
-        <div class="formStep flex active">
-          <span>3</span>
-          <p>Projeto</p>
-        </div>
-      </header>
-      <div class="wrapper">
-        <form action="" class="flex">
-          <label for="about">Sobre seu projeto</label>
-          <input
-            type="text"
-            placeholder="Descreva quais os objetivos desse projeto"
-          />
-          <div class="buttons">
-            <button class="back">VOLTAR</button>
-            <button>CONTINUAR</button>
-          </div>
-        </form>
+      </div>
+
+      <div class="buttons">
+        <button onclick="previous()" class="back">VOLTAR</button>
+        <button onclick="next()">CONTINUAR</button>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
