@@ -10,6 +10,8 @@ function currentIndex(listItems) {
   return current
 }
 
+
+
 function next() {
   current = currentIndex(list)
   limit = list.length - 1
@@ -22,8 +24,8 @@ function next() {
     listHeader[next].classList.add('active')
 
   } else {
-    list[current].classList.remove('show')
     var next = current + 1
+    list[current].classList.remove('show')
     list[next].classList.add('show')
     // change header colors
     listHeader[current].classList.remove('active')
@@ -41,8 +43,8 @@ function previous() {
     listHeader[current].classList.remove('active')
     listHeader[next].classList.add('active')
   } else {
-    list[current].classList.remove('show')
     var next = current - 1
+    list[current].classList.remove('show')
     list[next].classList.add('show')
     // change header colors
     listHeader[current].classList.remove('active')
