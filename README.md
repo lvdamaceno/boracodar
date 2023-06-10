@@ -41,6 +41,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>23</td>
+        <td><a href="desafio23-form-multi-step">Formulário multi step</a></td>
+        <td>09/06/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio23-form-multi-step/index.html">
+        <img width="300px" src="assets/img/desafio23-form-multi-step.png"/></a></td>
+    </tr>
+    <tr>
         <td>22</td>
         <td><a href="desafio22-profile">Profile</a></td>
         <td>31/05/2023</td>
