@@ -23,7 +23,8 @@
 }
 
 input,
-button {
+button,
+textarea {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -132,13 +133,29 @@ header .formStep.done span {
   color: var(--gray-400);
 }
 
-.step form input::placeholder {
+.step form textarea {
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+  color: var(--gray-400);
+  resize: none;
+}
+
+.step form input:focus,
+.step form textarea:focus {
+  outline: 1px solid var(--purple-mid);
+}
+
+.step form input::placeholder,
+.step form textarea::placeholder {
   color: var(--gray-200);
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.step form input:hover {
+.step form input:hover,
+.step form textarea:hover {
   border: 1px solid var(--purple-mid);
 }
 
@@ -180,6 +197,10 @@ header .formStep.done span {
 }
 
 @media (max-width: 45rem) {
+  header {
+    width: 95%;
+  }
+
   .container {
     width: 90%;
     height: 35rem;
