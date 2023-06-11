@@ -10,9 +10,13 @@ function currentIndex(listItems) {
   }
 }
 
-function addRemoveClass(array, current, next, className) {
+function addRemoveClass(array, current, action, className) {
   array[current].classList.remove(className)
-  array[next].classList.add(className)
+  if (action === 'next') {
+    array[current + 1].classList.add(className)
+  } else {
+    array[current - 1].classList.add(className)
+  }
 }
 
 function addRemoveCheckIcon(current, action) {
@@ -29,8 +33,8 @@ function next() {
   var current = currentIndex(listSteps)
   limit = listSteps.length - 1
   if (current != limit) {
-    addRemoveClass(listSteps, current, current + 1, 'show')
-    addRemoveClass(listHeader, current, current + 1, 'active')
+    addRemoveClass(listSteps, current, 'next', 'show')
+    addRemoveClass(listHeader, current, 'next', 'active')
     addRemoveCheckIcon(current, 'add')
   }
 }
@@ -38,8 +42,8 @@ function next() {
 function previous() {
   var current = currentIndex(listSteps)
   if (current != 0) {
-    addRemoveClass(listSteps, current, current - 1, 'show')
-    addRemoveClass(listHeader, current, current - 1, 'active')
+    addRemoveClass(listSteps, current, 'previous', 'show')
+    addRemoveClass(listHeader, current, 'previous', 'active')
     addRemoveCheckIcon(current, 'remove')
   }
 }

@@ -129,13 +129,17 @@ header .formStep.done span {
   border: 1px solid var(--gray-100);
   border-radius: 2px;
   height: 3.5rem;
-  color: var(--gray-200);
+  color: var(--gray-400);
 }
 
 .step form input::placeholder {
   color: var(--gray-200);
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.step form input:hover {
+  border: 1px solid var(--purple-mid);
 }
 
 /* buttons */
@@ -169,6 +173,10 @@ header .formStep.done span {
   background-color: var(--white);
   border: 1px solid var(--purple-mid);
   color: var(--purple-mid);
+}
+
+.container button.next:hover {
+  background-color: var(--purple-light);
 }
 
 @media (max-width: 45rem) {
