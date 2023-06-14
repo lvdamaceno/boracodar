@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ajuste de Iluminação</title>
+  </head>
+  <body>
+    <div class="colorDisplay"></div>
+
+    <h1>Ajuste de Iluminação</h1>
+    <div class="hslNumbers">
+      <p>hsl(</p>
+      <span id="hueValue">180</span>
+      <p>,</p>
+      <span id="lightValue">50</span>
+      <p>%,</p>
+      <span id="lightSaturation">50</span>
+      <p>%)</p>
+    </div>
+
+    <div class="colorAdjusts">
+      <div class="palette">
+        <i class="ph-light ph-palette"></i>
+        <div class="slidecontainer">
+          <input
+            id="slider hue"
+            type="range"
+            min="1"
+            max="360"
+            value="180"
+            class="slider hue"
+          />
+        </div>
+      </div>
+
+      <div class="palette">
+        <i class="ph-light ph-sun"></i>
+        <div class="slidecontainer">
+          <input
+            id="slider light"
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+          />
+        </div>
+      </div>
+
+      <div class="palette">
+        <i class="ph-light ph-circle-half"></i>
+        <div class="slidecontainer">
+          <input
+            id="slider saturation"
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
