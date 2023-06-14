@@ -1,5 +1,4 @@
 const colorDisplay = document.querySelector('.colorDisplay')
-const colorThumb = document.getElementsByClassName('.slider.hue::-webkit-slider-thumb')
 
 var sliderHue = document.getElementById("slider hue")
 var sliderLight = document.getElementById("slider light");
@@ -14,7 +13,7 @@ sliderHue.onmousemove = function () {
   var shadowColor = `0px 0px 53px 13px hsl(${sliderHueValue},${sliderLightValue}%,${sliderSaturationValue}%)`
   colorDisplay.style.backgroundColor = hueColor;
   colorDisplay.style.boxShadow = shadowColor
-  output.innerHTML = sliderHueValue;
+  output.innerHTML = sliderHueValue + ',';
 }
 
 sliderLight.onmousemove = function () {
@@ -26,7 +25,7 @@ sliderLight.onmousemove = function () {
   var shadowColor = `0px 0px 53px 13px hsl(${sliderHueValue},${sliderLightValue}%,${sliderSaturationValue}%)`
   colorDisplay.style.backgroundColor = hueColor;
   colorDisplay.style.boxShadow = shadowColor
-  output.innerHTML = sliderLightValue;
+  output.innerHTML = sliderLightValue + '%,';
 }
 
 sliderSaturation.onmousemove = function () {
@@ -38,5 +37,5 @@ sliderSaturation.onmousemove = function () {
   var shadowColor = `0px 0px 53px 13px hsl(${sliderHueValue},${sliderLightValue}%,${sliderSaturationValue}%)`
   colorDisplay.style.backgroundColor = hueColor;
   colorDisplay.style.boxShadow = shadowColor
-  output.innerHTML = sliderSaturationValue;
+  output.innerHTML = sliderSaturationValue + '%)';
 }
