@@ -42,7 +42,7 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     <tbody>
     <tr>
         <td>24</td>
-        <td><a href="desafio23-form-multi-step">Ajuste de iluminação</a></td>
+        <td><a href="desafio24-color-light">Ajuste de iluminação</a></td>
         <td>14/06/2023</td>
         <td align="center">
         <a href="https://lvdamaceno.github.io/boracodar/desafio24-color-light/index.html">
