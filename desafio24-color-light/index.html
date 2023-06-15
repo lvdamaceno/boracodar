@@ -24,8 +24,8 @@
       <div class="colorsNumbers">
         <p>hsl(</p>
         <span id="hueValue">180,</span>
-        <span id="lightValue">50%,</span>
-        <span id="lightSaturation">50%)</span>
+        <span id="saturationValue">50%,</span>
+        <span id="lightValue">50%)</span>
       </div>
       <div class="colorsNumbers">
         <p>rgb(</p>
@@ -33,7 +33,7 @@
         <p>,</p>
         <span id="gValue">191</span>
         <p>,</p>
-        <span id="bSaturation">191</span>
+        <span id="bValue">191</span>
         <p>)</p>
       </div>
       <div class="colorsNumbers">
@@ -54,6 +54,7 @@
             max="360"
             value="180"
             class="slider hue"
+            onmousemove="displayColorChange()"
           />
         </div>
       </div>
@@ -62,12 +63,13 @@
         <i class="ph-light ph-sun"></i>
         <div class="slidecontainer">
           <input
-            id="slider light"
+            id="slider saturation"
             type="range"
             min="1"
             max="100"
             value="50"
             class="slider"
+            onmousemove="displayColorChange()"
           />
         </div>
       </div>
@@ -76,12 +78,13 @@
         <i class="ph-light ph-circle-half"></i>
         <div class="slidecontainer">
           <input
-            id="slider saturation"
+            id="slider light"
             type="range"
             min="1"
             max="100"
             value="50"
             class="slider"
+            onmousemove="displayColorChange()"
           />
         </div>
       </div>
