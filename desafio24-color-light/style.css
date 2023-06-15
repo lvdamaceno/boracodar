@@ -23,11 +23,9 @@ body {
   justify-content: space-between;
   overflow: hidden;
   height: 100vh;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
-body * {
-}
 h1 {
   font-style: normal;
   font-weight: 300;
@@ -125,7 +123,7 @@ span {
 }
 
 @media (max-width: 45rem) {
-  body {
-    padding-bottom: 1rem;
+  .colorDisplay {
+    margin-top: -40rem;
   }
 }
