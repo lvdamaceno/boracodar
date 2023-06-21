@@ -5,3 +5,174 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --white: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./assets/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: brightness(0.8) grayscale(10%);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  height: fit-content;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+nav {
+  gap: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(16px);
+  width: fit-content;
+  z-index: 1;
+}
+
+nav i {
+  cursor: pointer;
+}
+
+.actions {
+  gap: 1rem;
+}
+
+.actions i {
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.actions i:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.adressBar {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  width: 27.5rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.bar {
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bar span {
+  font-size: 0.9rem;
+}
+
+/* screen */
+.screen {
+  position: relative;
+  z-index: 1;
+  width: 60rem;
+  height: 33.75rem;
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blur {
+  background: url(./assets/blur.jpg);
+  filter: blur(30px) brightness(0.8);
+  border-radius: 3rem;
+  position: absolute;
+  z-index: 0;
+  width: 105%;
+  height: 105%;
+  top: -0.75rem;
+  left: -1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen iframe {
+  position: absolute;
+  border-radius: 32px;
+}
+
+/* aside */
+aside {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(16px);
+  height: fit-content;
+
+  flex-direction: column;
+
+  gap: 0.75rem;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+
+  color: var(--white);
+
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -85px;
+}
+
+aside i {
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+aside i:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}

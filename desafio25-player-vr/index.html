@@ -4,10 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Player VR</title>
   </head>
-  <body>
+  <body class="flex">
+    <div class="container">
+      <aside class="flex">
+        <i class="ph ph-play-circle"></i>
+        <i class="ph ph-person-arms-spread"></i>
+        <i class="ph ph-stack"></i>
+        <i class="ph ph-magnifying-glass"></i>
+      </aside>
+      <main class="flex">
+        <nav class="flex">
+          <div class="actions flex">
+            <i class="ph ph-sidebar-simple"></i>
+            <i class="ph ph-caret-left"></i>
+            <i class="ph ph-caret-right"></i>
+          </div>
+          <div class="adressBar flex">
+            <i class="ph ph-text-aa"></i>
+            <div class="bar flex">
+              <i class="ph ph-lock"></i>
+              <span>youtube.com</span>
+            </div>
+            <i class="ph ph-arrow-clockwise"></i>
+          </div>
+          <div class="actions flex">
+            <i class="ph ph-export"></i>
+            <i class="ph ph-plus"></i>
+            <i class="ph ph-copy-simple"></i>
+          </div>
+        </nav>
+        <div class="screen">
+          <div class="blur flex"></div>
+          <iframe
+            width="960"
+            height="540"
+            src="https://www.youtube.com/embed/AKeUssuu3Is"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </main>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
