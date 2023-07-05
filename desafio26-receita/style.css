@@ -1,0 +1,99 @@
+/* 
+font-family: 'Source Sans 3', sans-serif;
+font-family: 'Source Serif 4', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #feece0;
+}
+
+h1 {
+  color: #58190a;
+  font-size: 4.5rem;
+  font-family: 'Source Serif 4', serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 2.375rem;
+  font-family: 'Source Serif 4', serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+i {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.75rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  gap: 3.5rem;
+}
+
+main p:nth-child(2) {
+  color: #58190a;
+  font-size: 2.375rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main p:nth-child(3) {
+  color: #9b6647;
+  font-size: 2.1875rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+section {
+  background-color: #9b6647;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4.62rem 3.12rem;
+  color: #fff;
+}
+t .details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+  color: #feece0;
+}
