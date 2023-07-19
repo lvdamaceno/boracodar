@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Plataforma de IA</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="texts flex">
+        <i class="ph ph-magic-wand"></i>
+        <h1>Experimente o poder da Inteligência Artificial</h1>
+      </div>
+      <div class="buttons flex">
+        <button>
+          <div class="wrapper flex">
+            <i class="ph ph-code"></i>
+            <p>Gerador de códigos</p>
+          </div>
+          <i class="ph ph-arrow-right"></i>
+        </button>
+        <button>
+          <div class="wrapper flex">
+            <i class="ph ph-image-square"></i>
+            <p>Edição de foto</p>
+          </div>
+          <i class="ph ph-arrow-right"></i>
+        </button>
+        <button>
+          <div class="wrapper flex">
+            <i class="ph ph-play-circle"></i>
+            <p>Geração de vídeos</p>
+          </div>
+          <i class="ph ph-arrow-right"></i>
+        </button>
+        <button>
+          <div class="wrapper flex">
+            <i class="ph ph-music-notes"></i>
+            <p>Criador de áudios e músicas</p>
+          </div>
+          <i class="ph ph-arrow-right"></i>
+        </button>
+      </div>
+      <div class="input">
+        <div class="content">
+          <i class="ph ph-plus-circle flex">
+            <input
+              type="text"
+              placeholder="Envie uma mensagem ou digite “/” para exibir os comandos "
+            />
+          </i>
+        </div>
+        <div class="send">
+          <i class="ph ph-paper-plane-right"></i>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -5,3 +5,133 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --gray-01: #f8fafc;
+  --gray-02: #e2e8f0;
+  --gray-03: #94a3b8;
+  --gray-04: #334155;
+  --gray-05: #1e293b;
+  --gray-06: #0f172a;
+  --gray-07: #020617;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/IMG-BG.png) no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: var(--gray-01);
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+p {
+  color: var(--gray-02);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+i {
+  border-radius: 1rem;
+  background: var(--gray-06, #0f172a);
+  padding: 1rem;
+  color: var(--gray-03);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 3.75rem;
+  border-radius: 2rem;
+  border: 1px solid var(--gray-04);
+  background: rgba(2, 6, 23, 0.8);
+  /* width: 76rem; */
+}
+
+.texts {
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2.5rem 0;
+  padding-bottom: 2.5rem;
+  align-items: center;
+  border-bottom: 1px var(--gray-04) solid;
+}
+
+.buttons button {
+  width: 38rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 1px solid var(--gray-04);
+  background: var(--gray-06);
+  padding: 1rem;
+}
+
+.buttons .wrapper {
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.buttons .wrapper i {
+  border: 1px solid var(--gray-05);
+}
+
+.buttons button:hover {
+  background-color: var(--gray-05);
+  cursor: pointer;
+}
+
+.input {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4rem;
+  align-items: center;
+}
+
+.input .content {
+  border-radius: 1rem;
+  border: 1px solid var(--gray-04, #334155);
+}
+
+.input .content input {
+  all: unset;
+  color: var(--gray-02);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input .content i {
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.input .send i {
+  border-radius: 1rem;
+  border: 1px solid var(--gray-04, #334155);
+}
+
+.input .send i:hover {
+  background: var(--gray-05);
+}
