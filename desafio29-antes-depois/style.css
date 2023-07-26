@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --slider-pos: 50%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.size {
+  width: 1000px;
+  height: 800px;
+}
+
+.before {
+  background: url(./assets/antes.jpeg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.divider {
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  right: -44px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.after {
+  background: url(./assets/depois.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-right: 0.5rem #fff solid;
+  width: var(--slider-pos);
+}
