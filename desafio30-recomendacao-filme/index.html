@@ -1,13 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Recomendação de Filmes</title>
   </head>
   <body>
+    <div class="container">
+      <div class="top">
+        <img src="./assets/logo.svg" alt="" />
+        <button>
+          Nova recomendação
+          <i class="ph ph-lightning"></i>
+        </button>
+      </div>
+      <div class="recomendations">
+        <div class="card">
+          <div class="title">
+            <h1>Barbie</h1>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="poster">
+              <img src="./assets/poster-barbie.png" alt="" />
+            </div>
+            <div class="dates">
+              <div class="duration">
+                <i class="ph ph-clock"></i>
+                1:54:00
+              </div>
+              <div class="released">
+                <i class="ph ph-calendar-blank"></i>
+                2023
+              </div>
+            </div>
+            <div class="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=Ujs1Ud7k49M"
+                target="_blank"
+              >
+                <button>
+                  <img src="./assets/play.svg" alt="" />
+                  Assistir o trailer
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            <h1>Oppenheimer</h1>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="poster">
+              <img src="./assets/poster-openh.png" alt="" />
+            </div>
+            <div class="dates">
+              <div class="duration">
+                <i class="ph ph-clock"></i>
+                3:00:00
+              </div>
+              <div class="released">
+                <i class="ph ph-calendar-blank"></i>
+                2023
+              </div>
+            </div>
+            <div class="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=F3OxA9Cz17A"
+                target="_blank"
+              >
+                <button>
+                  <img src="./assets/play.svg" alt="" />
+                  Assistir o trailer
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="title">
+            <h1>Indina Jones</h1>
+            <div class="stars">
+              <i class="ph-fill ph-star"></i>
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="poster">
+              <img src="./assets/poster-indiana.png" alt="" />
+            </div>
+            <div class="dates">
+              <div class="duration">
+                <i class="ph ph-clock"></i>
+                2:22:00
+              </div>
+              <div class="released">
+                <i class="ph ph-calendar-blank"></i>
+                2023
+              </div>
+            </div>
+            <div class="trailer">
+              <a
+                href="https://www.youtube.com/watch?v=VbEVNmAhYOg"
+                target="_blank"
+              >
+                <button>
+                  <img src="./assets/play.svg" alt="" />
+                  Assistir o trailer
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
