@@ -41,6 +41,54 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>30</td>
+        <td><a href="desafio30-recomendacao-filme">Recomendação de Filmes</a></td>
+        <td>01/08/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio30-recomendacao-filme/index.html">
+        <img width="300px" src="assets/img/desafio30-recomendacao-filme.png"/></a></td>
+    </tr>
+    <tr>
+        <td>29</td>
+        <td><a href="desafio29-antes-depois">Antes e Depois</a></td>
+        <td>25/07/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio29-antes-depois/index.html">
+        <img width="300px" src="assets/img/desafio29-antes-depois.png"/></a></td>
+    </tr>
+    <tr>
+        <td>28</td>
+        <td><a href="desafio28-plataforma-ia">Plataforma de IA</a></td>
+        <td>19/07/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio28-plataforma-ia/index.html">
+        <img width="300px" src="assets/img/desafio28-plataforma-ia.png"/></a></td>
+    </tr>
+    <tr>
+        <td>27</td>
+        <td><a href="desafio27-404">404</a></td>
+        <td>06/07/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio27-404/index.html">
+        <img width="300px" src="assets/img/desafio27-404.png"/></a></td>
+    </tr>
+    <tr>
+        <td>26</td>
+        <td><a href="desafio26-receita">Receita Junina</a></td>
+        <td>02/07/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio26-receita/index.html">
+        <img width="300px" src="assets/img/desafio26-receita.png"/></a></td>
+    </tr>
+    <tr>
+        <td>25</td>
+        <td><a href="desafio25-player-vr">Player VR</a></td>
+        <td>28/06/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio25-player-vr/index.html">
+        <img width="300px" src="assets/img/desafio25-player-vr.png"/></a></td>
+    </tr>
+    <tr>
         <td>24</td>
         <td><a href="desafio24-color-light">Ajuste de iluminação</a></td>
         <td>14/06/2023</td>
