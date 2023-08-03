@@ -41,6 +41,14 @@ Repositório dos projetos do desafio Bora Codar da Rocketseat
     </thead>
     <tbody>
     <tr>
+        <td>31</td>
+        <td><a href="desafio30-recomendacao-filme">Transcrição de Vídeo com IA</a></td>
+        <td>02/08/2023</td>
+        <td align="center">
+        <a href="https://lvdamaceno.github.io/boracodar/desafio31-transcricao-video/index.html">
+        <img width="300px" src="assets/img/desafio31-transcricao-video.png"/></a></td>
+    </tr>
+    <tr>
         <td>30</td>
         <td><a href="desafio30-recomendacao-filme">Recomendação de Filmes</a></td>
         <td>01/08/2023</td>
