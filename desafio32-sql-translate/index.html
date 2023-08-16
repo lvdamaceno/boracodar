@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>SQL Translate</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./assets/Logo.svg" alt="" />
+        <i class="ph ph-trash"></i>
+      </header>
+      <div class="wrapper">
+        <section>
+          <h3>Cole seu texto aqui</h3>
+          <textarea class="primary code" name="" id="" cols="30" rows="7">
+CREATE TABLE IF NOT EXISTS "chats" (
+"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+"title" text,
+"atlas_user_id" uuid NOT NULL,
+"created_at" timestamp DEFAULT now()
+);</textarea
+          >
+        </section>
+        <section>
+          <h3>Faça uma pergunta sobre o código</h3>
+          <textarea class="primary text" name="" id="" cols="30" rows="2">
+Me liste todos os chats que possuem pelo menos 4 mensagens</textarea
+          >
+          <button>
+            <i class="ph ph-sparkle"></i>
+            <p>Perguntar à inteligência artificial</p>
+          </button>
+        </section>
+        <section>
+          <h3>Resposta</h3>
+          <textarea class="secondary" name="" id="" cols="30" rows="9">
+SELECT c.id, c.title
+FROM chats c
+INNER JOIN (
+      SELECT chat_id, COUNT(*) AS message_count
+      FROM messages
+      GROUP BY chat_id
+) m ON c.id = m.chat_id
+WHERE m.message_count >= 4;
+          </textarea>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
