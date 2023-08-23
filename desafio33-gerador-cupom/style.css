@@ -194,7 +194,7 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body {
     align-items: center;
     width: 100vw;
