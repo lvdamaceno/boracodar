@@ -69,13 +69,38 @@ body {
   text-transform: uppercase;
 }
 
+.header .input {
+  background-color: var(--gray-light);
+}
+
+.header i {
+  font-size: 1.25rem;
+  padding: 1rem 0 1rem 0.75rem;
+}
+
 .header input {
-  display: flex;
+  border: 0;
   padding: 1rem 0.75rem;
   align-items: center;
-  gap: 0.75rem;
-  align-self: stretch;
   background: var(--gray-light);
+  width: 100%;
+  outline: 0;
+
+  color: var(--gray-dark);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.4rem */
+}
+
+.header input::placeholder {
+  color: var(--gray-dark);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.4rem */
 }
 
 .header button {
@@ -91,6 +116,11 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.header button:hover {
+  background: #5b409b;
+  cursor: pointer;
 }
 
 /* TICKET */
