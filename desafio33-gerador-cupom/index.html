@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Gerador de Cupom</title>
   </head>
-  <body>
+  <body class="flex">
+    <div class="app flex">
+      <div class="header flex">
+        <h1>GERE SEU TICKET </br>E COMPARTILHE </br>COM O MUNDO</h1>
+        <form action="" class="flex">
+          <label for="">DIGITE SEU USUÁRIO DO GITHUB</label>
+          <input type="text" placeholder="Nome de usuário" />
+          <button>GERAR MEU TICKET</button>
+        </form>
+      </div>
+      <div class="ticket flex">
+        <img src="./assets/img-cover-ticket.png" alt="" />
+        <div class="profile flex">
+          <div class="wrapper flex">
+            <img src="./assets/img-avatar.png" alt="">
+            <h2>TRIPULANTE</h2>
+            <h1>Seu nome aqui</h1>
+          </div>
+          <div class="date-place flex">
+            <div class="wrapper flex">
+              <div class="left">
+                <p>EVENTO</p>
+                <p>DATA</p>
+                <p>HORA</p>
+              </div>
+              <div class="right">
+                <p><strong>IA PARA DEVIS</strong></p>
+                <p><strong>14 - 16 AGO. 2023</strong></p>
+                <p><strong>AO VIVO - 19H</strong></p>
+              </div>
+            </div>
+            <div class="bottom">
+              <img src="./assets/lines-svg.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
