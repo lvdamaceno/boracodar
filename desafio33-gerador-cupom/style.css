@@ -130,6 +130,10 @@ body {
   padding: 2.81rem 2.38rem;
 }
 
+.ticket .container {
+  width: fit-content;
+}
+
 .profile {
   padding: 1rem;
   background-color: var(--white);
@@ -188,4 +192,29 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: center;
+    width: 100vw;
+  }
+
+  .app {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+  }
+
+  .header {
+    align-items: center;
+    text-align: center;
+  }
+
+  .ticket {
+    background: url(./assets/bg-card-ticket.png) no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    transform: scale(0.6);
+  }
 }
