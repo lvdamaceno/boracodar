@@ -171,6 +171,8 @@ body {
 
 .profile .wrapper img {
   border-radius: 999px;
+  width: 8rem;
+  height: 8rem;
 }
 
 .profile .date-place {
@@ -192,29 +194,4 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-@media (max-width: 500px) {
-  body {
-    align-items: center;
-    width: 100vw;
-  }
-
-  .app {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100vw;
-  }
-
-  .header {
-    align-items: center;
-    text-align: center;
-  }
-
-  .ticket {
-    background: url(./assets/bg-card-ticket.png) no-repeat;
-    background-size: cover;
-    padding: 1rem;
-    transform: scale(0.6);
-  }
 }

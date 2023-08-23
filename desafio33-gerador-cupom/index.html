@@ -22,10 +22,10 @@
           <label for="">DIGITE SEU USUÁRIO DO GITHUB</label>
           <div class="input flex">
             <i class="ph ph-github-logo"></i>
-            <input type="text" placeholder="Nome de usuário" />
+            <input type="text" placeholder="Nome de usuário" id="name"/>
           </div>
           
-          <button>GERAR MEU TICKET</button>
+          <button type="button" onclick="getInputValue()">GERAR MEU TICKET</button>
         </form>
       </div>
       <div class="ticket ">
@@ -34,9 +34,9 @@
         
           <div class="profile flex">
             <div class="wrapper flex">
-              <img src="./assets/img-avatar.png" alt="">
+              <img src="./assets/img-avatar.png" alt="" id="profile-picture">
               <h2>TRIPULANTE</h2>
-              <h1>Seu nome aqui</h1>
+              <h1 id="profile-name">Seu nome aqui</h1>
             </div>
             <div class="date-place flex">
               <div class="wrapper flex">
