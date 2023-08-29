@@ -16,31 +16,135 @@
   </head>
   <body>
     <div class="app">
-      <header>
+      <div class="header">
         <h1>Lista de Compras</h1>
-      </header>
-      <section>
-        <form action="">
-          <div class="top">
-            <div class="label-input">
-              <label for="item-name">Item</label>
-              <input type="text" id="item-name" />
+      </div>
+      <div class="form">
+        <div class="container item">
+          <label for="item">Item</label>
+          <input type="text" />
+        </div>
+        <div class="container quantity">
+          <label for="item">Quantidade</label>
+          <input type="text" />
+        </div>
+        <div class="container category">
+          <label for="item">Categoria</label>
+          <input type="text" />
+        </div>
+        <div class="container new">
+          <input type="button" value="" />
+        </div>
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="description">
+            <input type="checkbox" />
+            <div class="wrapper">
+              <p>Maçã</p>
+              <span>2 unidades</span>
             </div>
           </div>
-          <div class="bottom">
-            <div class="label-input">
-              <label for="quantity">Quantidade</label>
-              <input type="text" id="quantity" />
+          <div class="detail">
+            <div class="category orange">
+              <i class="ph ph-apple-logo"></i>
             </div>
-            <div class="label-input">
-              <label for="category">Categoria</label>
-              <input type="text" id="category" />
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
             </div>
-            <button><i class="ph-fill ph-plus-circle"></i></button>
           </div>
-        </form>
-      </section>
-      <section>Lista</section>
+        </div>
+
+        <div class="item">
+          <div class="description">
+            <input type="checkbox" />
+            <div class="wrapper">
+              <p>Pão francês</p>
+              <span>4 unidades</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="category yellow">
+              <i class="ph ph-hamburger"></i>
+            </div>
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="description">
+            <input type="checkbox" />
+            <div class="wrapper">
+              <p>Brócolis</p>
+              <span>1 unidade</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="category green">
+              <i class="ph ph-carrot"></i>
+            </div>
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="description">
+            <input type="checkbox" />
+            <div class="wrapper">
+              <p>Leite</p>
+              <span>2 litros</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="category blue">
+              <i class="ph ph-drop"></i>
+            </div>
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="description">
+            <input type="checkbox" />
+            <div class="wrapper">
+              <p>Peito de Frango</p>
+              <span>2 kg</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="category pink">
+              <i class="ph ph-fork-knife"></i>
+            </div>
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="item done">
+          <div class="description">
+            <input type="checkbox" checked />
+            <div class="wrapper">
+              <p>Mamão</p>
+              <span>1 unidade</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="category orange">
+              <i class="ph ph-apple-logo"></i>
+            </div>
+            <div class="more">
+              <i class="ph-fill ph-dots-three-outline-vertical"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

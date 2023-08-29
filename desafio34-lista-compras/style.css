@@ -38,49 +38,89 @@
 body {
   background-color: var(--base-gray-600);
   color: var(--base-gray-100);
+  display: flex;
+  justify-content: center;
+}
+
+/* CATEGORIES COLORS */
+
+.orange {
+  background-color: var(--apoio-orange-dark);
+  color: var(--apoio-orange);
+}
+
+.yellow {
+  background-color: var(--apoio-yellow-dark);
+  color: var(--apoio-yellow);
+}
+
+.green {
+  background-color: var(--apoio-green-dark);
+  color: var(--apoio-green);
+}
+
+.blue {
+  background-color: var(--apoio-dark-blue);
+  color: var(--apoio-blue);
+}
+
+.pink {
+  background-color: var(--apoio-pink-dark);
+  color: var(--apoio-pink);
 }
 
 .app {
-  height: 100vh;
-  padding: 5.5rem 1rem 1rem;
-
-  background: url(./assets/header.png) no-repeat;
+  width: 23.75rem;
 }
 
-.label-input {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+/* HEADER */
+.header {
+  margin: 5.5rem 1.5rem 1.5rem 1.5rem;
 }
 
-header h1 {
+.header h1 {
   color: var(--base-gray-100);
+  font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 1.5rem */
   letter-spacing: 0.045rem;
-  margin-bottom: 1.5rem;
 }
 
-header + section {
-  margin-bottom: 2.5rem;
+/* FORM */
+.item {
+  grid-area: item;
 }
 
-input {
-  border-radius: 0.375rem;
-  border: 1px solid var(--base-gray-300);
-  background: var(--base-gray-500);
-  padding: 0.75rem;
+.quantity {
+  grid-area: quantity;
 }
 
-form {
+.category-list {
+  grid-area: category;
+}
+
+.new-item {
+  grid-area: new;
+}
+
+.form {
+  margin: 1.5rem 1.5rem 2.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 7rem 9.6rem auto;
+  gap: 0.75rem;
+  grid-template-areas: 'item item item' 'quantity category new';
+}
+
+.form .container {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  align-self: flex-end;
 }
 
-form label {
+.form .container label {
   color: var(--base-gray-200);
   font-family: Inter;
   font-size: 0.75rem;
@@ -90,14 +130,122 @@ form label {
   letter-spacing: 0.0225rem;
 }
 
-form button {
-  border: 0;
-  font-size: 2.5rem;
-  color: var(--product-purple);
+.form .container input {
+  border-radius: 0.375rem;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-500);
+  padding: 0.75rem;
+
+  color: var(--base-gray-100);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 114.286% */
+  letter-spacing: 0.02625rem;
 }
 
-form .bottom {
+.form .container input[type='text']:focus {
+  outline: 0;
+  border: 1px var(--product-purple-light) solid;
+}
+
+.form .container input[type='button'] {
+  border-radius: 999px;
+  width: 2.6rem;
+  height: 2.6rem;
+  background: var(--product-purple);
+  cursor: pointer;
+}
+
+.form .container input[type='button']:hover {
+  background-color: var(--product-purple-dark);
+}
+
+/* LIST */
+
+.list {
+  margin: 2.5rem 1.5rem;
+}
+
+.list .item {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-400);
+}
+
+.list .item.done {
+  border-radius: 0.5rem;
+  border: 1px solid var(--base-gray-400);
+  background: var(--base-gray-500);
+  opacity: 0.6;
+}
+
+.list .item .description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list .item .description input[type='checkbox'] {
+  all: unset;
+  border: 1px solid var(--product-purple-light);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.list .item .description input[type='checkbox']:hover {
+  background-color: var(--product-purple-dark);
+}
+
+.list .item .description input[type='checkbox']:checked {
+  border: 1px solid var(--sucess);
+  background-color: var(--sucess);
+}
+
+.list .item .description input[type='checkbox']:checked:hover {
+  border: 1px solid var(--sucess-light);
+  background-color: var(--sucess-light);
+}
+
+.list .item .description p {
+  color: var(--base-gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.list .item .description span {
+  color: var(--base-gray-200);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.list .item .detail {
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
+}
+
+.list .item .detail .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.list .item .detail .more {
+  color: var(--product-purple-light);
+  font-size: 1.25rem;
+  cursor: pointer;
 }
