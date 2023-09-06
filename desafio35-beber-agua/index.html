@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Beba Água</title>
   </head>
   <body>
     <div class="app">
       <header>
-        <img src="" alt="" />
+        <img
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=100"
+          alt=""
+        />
         <div class="container">
           <h1>Boa tarde,</h1>
-          <h1>Usuário</h1>
+          <h1 class="bold">Usuário <i class="ph ph-hand-waving"></i></h1>
         </div>
       </header>
       <main>
         <div class="percentage">
           <p>80%</p>
-          <img src="" alt="" />
+          <img src="./assets/Emoji.svg" alt="" />
           <h1>Beber água</h1>
           <h2>Meta: 3L</h2>
         </div>
         <div class="options">
-          <div class="daily-goal"></div>
-          <div class="quantity"></div>
-          <div class="timer"></div>
-          <input type="button" />
+          <div class="daily-goal">
+            <div class="specification">
+              <p>Meta diária</p>
+              <span>3000ml</span>
+            </div>
+            <div class="slider">
+              <input type="range" min="0" max="3000" value="300" />
+            </div>
+          </div>
+          <div class="quantity">
+            <div class="specification">
+              <p>Quantidade por timer</p>
+              <span>300ml</span>
+            </div>
+            <div class="slider">
+              <input type="range" min="0" max="300" value="30" />
+            </div>
+          </div>
+          <div class="timer">
+            <div class="hour">
+              <span>00</span>
+              <p>h</p>
+            </div>
+            <div class="separator">
+              <p>:</p>
+            </div>
+            <div class="minutes">
+              <span>01</span>
+              <p>m</p>
+            </div>
+          </div>
+          <button>Começar <i class="ph-bold ph-caret-right"></i></button>
         </div>
       </main>
     </div>
