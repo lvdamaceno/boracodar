@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  --product-primary: #633bbc;
+  --product-secondary: #8257e5;
+  --base-background: #d8eed2;
+  --base-surface: #fdfdfd;
+  --base-surface-element: #b1dda5;
+  --base-text-primary: #242424;
+}
+
+body {
+  background-color: var(--base-background);
+}
+
+.app {
+  min-width: 22.5rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: var(--base-surface);
+  margin-top: 6.5rem;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container img {
+  margin: auto;
+  margin-top: -7rem;
+}
+
+.main {
+  text-align: center;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.main h1 {
+  color: var(--text-primary, #242424);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem; /* 133.333% */
+}
+
+.energy-portion {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.energy-portion .specs {
+  width: 8rem;
+  text-align: center;
+}
+
+.energy-portion .specs h2 {
+  color: var(--text-primary, #242424);
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem; /* 114.286% */
+}
+
+.energy-portion .specs p {
+  margin-top: 0.5rem;
+  color: var(--text-primary, #242424);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.nutritional-table {
+  display: grid;
+  gap: 1rem;
+}
+
+.nutritional-info .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info strong {
+  color: var(--text-primary, #242424);
+
+  /* heading3 */
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem; /* 114.286% */
+}
+
+.info p {
+  color: var(--text-primary, #242424);
+  text-align: right;
+
+  /* number-sm */
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 114.286% */
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+.scale span {
+  height: 0.5rem;
+  width: 2.66rem;
+  border-radius: 5rem;
+  background: var(--surface-element, #b1dda5);
+}
+
+.scale span.active {
+  background: var(--primary, #3bab1e);
+}
+.main button {
+  margin-top: 2rem;
+  border: 0;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--primary, #3bab1e);
+  box-shadow: 0px 8px 24px 0px rgba(59, 171, 30, 0.25);
+  color: var(--text-cta, #fdfdfd);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
